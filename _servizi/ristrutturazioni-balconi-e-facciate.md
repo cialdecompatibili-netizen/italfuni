@@ -9,6 +9,8 @@ seo_title: "Ristrutturazioni balconi e facciate - Italfuni"
 seo_description: "Impresa edile specializzata nella ristrutturazione di balconi e facciate su funi con tecniche alpinistiche permettendo di abbattere i prezzi fino al 40%."
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/operai-balconi.jpg" alt="Ristrutturazioni balconi e facciate" align="center" %}
+
 La **Italfuni, leader**  nel campo dei servizi su  **corda e fune,** effettua lavori  di **ristrutturazione**  e  **manutenzione** su **edifici di qualsiasi dimensione**, garantendo rapidità, professionalità e sicurezza.
 
 Seguendo tutti gli standard e le norme di sicurezza (locali e nazionali), infatti,  i nostri operatori su corda, assicurano ottimi risultati per interventi di ristrutturazione su facciate, balconi, cornicioni, tetti o camini ma anche restauri completi o parziali per la copertura degli stabili. Infondiamo  **sicurezza**: è la nostra prima priorità!

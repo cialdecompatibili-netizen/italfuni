@@ -9,6 +9,8 @@ seo_title: "Potatura alberi su funi - Italfuni"
 seo_description: "Potatura alberi ad alto fusto."
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/potatura-albero-con-corde.jpg.jpg" alt="Potatura alberi" align="center" %}
+
 **ATTENZIONE: NON SIAMO ANCORA ABILITATI PER SVOLGERE QUESTO SERVIZIO. SARA’ DISPONIBILE A BREVE.**
 
 Una buona potatura mantiene gli alberi belli e robusti durante tutto l’anno. Oltre a mantenere la sua bellezza, ci sono diversi motivi per cui il taglio dell’albero è importante.

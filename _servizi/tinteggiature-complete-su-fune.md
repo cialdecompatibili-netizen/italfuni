@@ -9,6 +9,8 @@ seo_title: "Tinteggiature complete su fune - Italfuni"
 seo_description: "Italfuni esegue tinteggiature complete su fune su facciate di qualsiasi altezza. Una squadra di imbianchini acrobati è pronta ad intervenire ogni dove si presenta un problema."
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/tinteggiatura.jpg" alt="Tinteggiature complete" align="center" %}
+
 Siamo una società incentrata sul cliente e ci sforziamo sempre di offrire i migliori servizi per garantire loro la massima soddisfazione.
 
 Noi della **Italfuni** siamo in grado di risolvere tutte le esigenze, utilizzando le tecniche di accesso con corde e funi.

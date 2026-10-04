@@ -9,6 +9,8 @@ seo_title: "Montaggio isolanti su fune - Italfuni"
 seo_description: "Montaggio isolanti termici, acustici."
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/isolanti.jpg" alt="Montaggio isolanti" align="center" %}
+
 L’**isolamento termico**  è utilizzato per la coibentazione termica e l’isolamento acustico, attraverso il montaggio di particolari pannelli all’esterno o all’interno dell’edificio. Una buona coibentazione termica è essenziale sia per le prestazioni dell’edificio sia per la salute degli occupanti.
 
 Senza sufficiente isolamento, ampie porzioni di energia utilizzate per riscaldare o raffreddare un edificio andranno perse all’esterno. Si possono avere anche problemi di muffa poiché l’aria riscaldata si raffredda rapidamente e fa condensare il vapore acqueo.

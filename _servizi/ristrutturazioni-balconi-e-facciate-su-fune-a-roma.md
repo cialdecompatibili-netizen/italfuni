@@ -7,6 +7,8 @@ seo_title: "Ristrutturazioni balconi e facciate su fune a Roma - Italfuni"
 seo_description: "Italfuni a Roma è specializzata in lavori di ristrutturazione e manutenzione con accessi in corda in totale o parziale assenza di supporti per ponteggi. Come primo passo, i nostri tecnici, architetti, ingegneri e geometri competenti effettuano un’ispezione sul posto per realizzare una valutazione del lavoro e presentare un preventivo gratuito. Durante la seconda fase, dopo …"
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/operai-balconi.jpg" alt="Ristrutturazioni balconi e facciate su fune a Roma" align="center" %}
+
 **Italfuni a Roma** è specializzata in lavori di ristrutturazione e manutenzione con accessi in corda in totale o parziale assenza di supporti per ponteggi.
 
 Come primo passo, i nostri tecnici, architetti, ingegneri e geometri competenti effettuano un’**ispezione** sul posto per realizzare una valutazione del lavoro e presentare un **preventivo gratuito**.

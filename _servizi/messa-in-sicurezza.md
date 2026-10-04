@@ -9,6 +9,8 @@ seo_title: "Messa in sicurezza e rimozione materiale pericolante - Italfuni"
 seo_description: "L'edificio mostra chiari segni di invecchiamento con materiale pericolante? Nessun problema siamo pronti ad intervenire con funi a prezzi accessibili."
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/img_20180118_wa0002.jpg" alt="Rimozione materiale pericolante su fune" align="center" %}
+
 Il nostro staff è composto da professionisti certificati che sono esperti in **tecniche di alpinismo** e nella rimozione di **materiale instabile e distaccante** come parti pericolanti dagli edifici, pezzi di intonaco che potrebbero cadere o parti di case o cose pericolanti con chiari segni di cedimento che potrebbero causare danni a persone e agli oggetti che lo circondano.
 
 I servizi di sicurezza sono gestiti da professionisti specializzati.

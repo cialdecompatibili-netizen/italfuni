@@ -7,6 +7,8 @@ seo_title: "Messa in sicurezza a Roma - Italfuni"
 seo_description: "Italfuni a Roma è un’azienda che esegue professionalmente l’accesso su corda per edifici e strutture alte. Con vari contratti conclusi con successo con il nostro nome, siamo leader di mercato nel nostro settore altamente specializzato. Abbiamo anni di esperienza all’interno del nostro team insieme a procedure che sono state sviluppate per garantire un lavoro sicuro …"
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/img_20180118_wa0002.jpg" alt="Messa in sicurezza a Roma" align="center" %}
+
 Italfuni a Roma è un’azienda che esegue professionalmente l’accesso su corda per edifici e strutture alte.
 
 Con vari contratti conclusi con successo con il nostro nome, siamo leader di mercato nel nostro settore altamente specializzato.

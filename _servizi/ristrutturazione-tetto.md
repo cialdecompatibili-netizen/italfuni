@@ -8,6 +8,8 @@ seo_title: "Ristrutturazione tetto - Italfuni"
 seo_description: "Stai cercando una ditta edile specializzata nella ristrutturazione di tetti che grazie all'edilizia su fune abbatte il prezzo? Sei nel posto giusto!"
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/riparazione-tetti.jpg" alt="Ristrutturazione tetto" align="center" %}
+
 Il tetto come tutti sappiamo è un elemento fondamentale per la casa, garantisce protezione contro intemperie, isolamento termico e permette di vivere in un ambiente sano e sicuro.
 
 Avere un tetto fatto a regola d’arte significa risparmiare sulla bolletta della luce grazie ad un buon isolamento termico, evita infiltrazioni d’acqua e umidità di ogni tipo.

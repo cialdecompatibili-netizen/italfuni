@@ -7,6 +7,8 @@ seo_title: "Tinteggiature complete a Roma - Italfuni"
 seo_description: "Devi pitturare un edificio molto alto oppure lo stabile dove vivi è stato trascurato per molti anni e le facciate cominciano a dare segni di vecchiaia? Noi di Italfuni abbiamo la giusta soluzione, un alternativa è l’edilizia su fune che grazie all’assenza di ponteggi e impalcature permette di abbattere i costi di intervento. Il nostro …"
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/tinteggiatura.jpg" alt="Tinteggiature complete a Roma" align="center" %}
+
 Devi pitturare un edificio molto alto oppure lo stabile dove vivi è stato trascurato per molti anni e le facciate cominciano a dare segni di vecchiaia?
 
 Noi di Italfuni abbiamo la giusta soluzione, un alternativa è l’edilizia su fune che grazie all’assenza di ponteggi e impalcature permette di abbattere i costi di intervento.

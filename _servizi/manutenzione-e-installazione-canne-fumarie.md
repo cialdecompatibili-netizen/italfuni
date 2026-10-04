@@ -8,6 +8,8 @@ seo_title: "Pulizia, manutenzione e installazione canne fumarie - Italfuni"
 seo_description: "Specializzati nella pulizia, manutenzione e installazione di canne fumarie su fune permettendo di abbattere il prezzo fino al 40%."
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/img_20180118_wa0002.jpg" alt="Pulizia, manutenzione e installazione canne fumarie" align="center" %}
+
 Le canne fumarie aspirano polveri, ceneri, catrami, prodotti della combustione che vi si depositano sotto forma di fuliggine.
 
 > Se la fuliggine occlude la parte terminale del comignolo ne altera il corretto funzionamento e riduce l’efficienza di caminetti, stufe o caldaie. L’occlusione completa dei comignoli è molto pericolosa: causa surriscaldamenti dell’impianto e, nei casi più gravi, incendi.

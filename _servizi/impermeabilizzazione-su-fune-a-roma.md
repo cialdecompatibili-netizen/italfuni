@@ -7,6 +7,8 @@ seo_title: "Impermeabilizzazione su fune a Roma - Italfuni"
 seo_description: "Le infiltrazioni di acqua possono essere una delle ragioni principali del deterioramento degli edifici nel tempo. Per questo motivo, l’impermeabilizzazione costante e coerente è fondamentale per mantenere il tuo stabile sicuro ed evitare danni strutturali. Ma dal momento che non tutte le aree sono facilmente accessibili da terra e si desidera impermeabilizzare completamente l’edificio, è …"
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/impermeabilzzazione.jpg" alt="Impermeabilizzazione su fune a Roma" align="center" %}
+
 Le infiltrazioni di acqua possono essere una delle ragioni principali del deterioramento degli edifici nel tempo.
 
 Per questo motivo, l’**impermeabilizzazione** costante e coerente è fondamentale per mantenere il tuo stabile sicuro ed evitare danni strutturali.

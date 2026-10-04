@@ -7,6 +7,8 @@ seo_title: "Messa in sicurezza dei lavoratori a Latina - Italfuni"
 seo_description: "Italfuni è un’azienda specializzata nel campo dei servizi su corda a fune che opera in tutta Latina e provincia. L’accesso su corda permette ai lavoratori di Italfuni di poter raggiungere qualsiasi punto e altezza, grazie all’assenza di ingombranti impalcature e pontili. La nostra società è leader nel mercato dei servizi su fune, che rappresenta un settore …"
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/img_20180118_wa0002.jpg" alt="Messa in sicurezza dei lavoratori a Latina" align="center" %}
+
 Italfuni è un’azienda specializzata nel campo dei servizi su **corda a fune** che opera in tutta Latina e provincia.
 
 L’accesso su corda permette ai lavoratori di Italfuni di poter raggiungere qualsiasi punto e altezza, grazie all’assenza di ingombranti impalcature e pontili.

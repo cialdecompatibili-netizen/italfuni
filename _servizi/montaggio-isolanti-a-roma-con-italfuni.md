@@ -7,6 +7,8 @@ seo_title: "Montaggio isolanti su fune a Roma - Italfuni"
 seo_description: "A Roma, il servizio di isolamento termico resta fondamentale per Italfuni che garantisce attraverso l’aiuto di moderne attrezzature un buon riscaldamento della casa, riducendo il consumo di energia, fornendo un regime ottimale per l’edificio e creando condizioni confortevoli in inverno e in estate. Gli scalatori industriali della nostra azienda hanno superato una formazione specifica e …"
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/isolanti.jpg" alt="Montaggio isolanti su fune a Roma" align="center" %}
+
 A Roma, il servizio di **isolamento termico** resta fondamentale per **Italfuni** che garantisce attraverso l’aiuto di moderne attrezzature un buon riscaldamento della casa, riducendo il consumo di energia, fornendo un regime ottimale per l’edificio e creando condizioni confortevoli in inverno e in estate.
 
 Gli scalatori industriali della nostra azienda hanno superato una formazione specifica e vantano un’esperienza pluriennale nel settore dei servizi di costruzione, che consente loro di eseguire installazioni di qualsiasi complessità.

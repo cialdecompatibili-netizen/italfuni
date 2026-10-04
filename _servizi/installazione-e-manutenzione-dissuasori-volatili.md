@@ -8,6 +8,8 @@ seo_title: "Installazione e manutenzione dissuasori per volatili - Italfuni"
 seo_description: "Italfuni: specializzata nell'installazione e manutenzione di dissuasori per volatili e piccioni tramite corde e funi, permettendo di intervenire abbattendo i prezzi."
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/img_20180118_wa0002.jpg" alt="Installazione e manutenzione dissuasori per piccioni" align="center" %}
+
 Italfuni è specializzata nell’installazione e manutenzione di dissuasori per piccioni e volatili tramite tecniche alpinistiche che ci consentono di raggiungere ogni punto dell’edificio senza installare impalcature di vario genere garantendo un notevole risparmio di risorse e tempo.
 
 I dissuasori vengono installati principalmente per i seguenti motivi:

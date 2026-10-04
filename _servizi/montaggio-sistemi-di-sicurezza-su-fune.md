@@ -9,6 +9,8 @@ seo_title: "Montaggio sistemi di sicurezza su fune - Italfuni"
 seo_description: "Stai cercando degli operatori capaci di montare sistemi di sicurezza in zone inaccessibili? Sei nel posto giusto! Italfuni, azienda leader nel settore edile su fune è capace di arrivare ed operare tempestivamente in ogni angolo della vostra casa o palazzo senza installazioni di ponteggi o affitto di macchinari."
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/img_20180118_wa0002.jpg" alt="Montaggio sistemi di sicurezza su fune" align="center" %}
+
 **Italfuni**  esegue professionalmente l’accesso su corda presso edifici e strutture alti con attrezzature tecniche (Dispositivi di Protezione Individuali) appositamente certificate.
 
 La professionalità e l’impegno degli addetti al settore forniscono un ambiente di lavoro sicuro, secondo le normative UNI EN garantendo le migliori pratiche del settore.

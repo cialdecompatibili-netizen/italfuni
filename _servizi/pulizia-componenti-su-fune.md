@@ -8,6 +8,8 @@ seo_title: "Pulizia componenti su fune - Italfuni"
 seo_description: "Desideri pulire o fare delle manutenzione al tuo stabile in posti inaccessibili senza montare ponteggi o impalcature? Sei nel posto giusto! Azienda leader specializzata nella pulizia di grondaie, serbatoi, camini, facciate, dighe, lampioni e molto altro ancora."
 ---
 
+{% include immagine.liquid src="assets/img/italfuni/img_20180118_wa0002.jpg" alt="Pulizia componenti su fune" align="center" %}
+
 La **pulizia di Grondaie e Pluviali** sono un intervento edile importante: la sporcizia accumulata nelle grondaie è una delle principali cause delle infiltrazioni e comporta seri danni all’edificio.  Tenere una grondaia pulita, evita un sacco di problemi e di spese impreviste durante l’anno!
 
 Adesso è giunto per voi l’importante momento: dovete pulire grondaie, pluviali e camini ma, sono in quota e, non volete o potete installare cestelli elevatori, gru o ponti mobili?

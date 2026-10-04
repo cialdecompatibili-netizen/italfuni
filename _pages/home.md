@@ -17,8 +17,8 @@ latest_posts:
   enabled: true
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
-seo_title: "{title} | Smart Web Agency"
-seo_description: "Web agency a Roma dal 2013: siti web, e-commerce, SEO, Google Ads e brand identity su misura per imprenditori, start up e PA. Prima consulenza gratuita, risposta entro 24 ore."
+seo_title: "Lavori su fune a Roma e Lazio | Italfuni"
+seo_description: "Lavori edili su fune senza ponteggi: pulizia vetri e grondaie, tinteggiature, impermeabilizzazioni, canne fumarie e molto altro. Preventivo gratuito senza impegno, risparmio fino al 40%."
 ---
 
 <style>
@@ -76,13 +76,13 @@ html[data-theme="dark"] .prj-home-more a{border-color:rgba(255,255,255,.3)}
 <!-- ===== MARTE END (html) ===== -->
 <canvas id="rete-cv" aria-hidden="true"></canvas>
 
-## Web Agency a Roma dal 2013, al fianco della crescita del tuo business.
+## Lavori in quota su fune, senza ponteggi e con costi più bassi.
 
-Comunicazione, web marketing e sviluppo di piattaforme digitali: aiutiamo imprenditori, start up e grandi aziende a crescere, nel privato come nella Pubblica Amministrazione. Ogni progetto nasce da un'analisi su misura del business e degli obiettivi, combinando creatività e concretezza per ottenere risultati misurabili.
+Italfuni esegue lavori edili e di manutenzione su fune: pulizia vetri e grondaie, tinteggiature, impermeabilizzazioni, ristrutturazioni di balconi, facciate e tetti, canne fumarie e rimozione di materiale pericolante. Le tecniche derivano da speleologia e alpinismo e permettono di raggiungere punti altrimenti inaccessibili.
 
-Un team unico di professionisti coordina ogni fase, dalla strategia al risultato: siti, e-commerce, campagne, brand identity e applicativi su misura. Rispondiamo entro 24 ore, festivi esclusi, e la prima consulenza è gratuita.
+Evitare ponteggi, piattaforme aeree e permessi comunali rende l'intervento più rapido e fa risparmiare fino al 40%. Sopralluogo e preventivo sono gratuiti e senza impegno.
 
-**Vuoi far crescere il tuo business?** Scrivici su WhatsApp o richiedi un preventivo: costruiamo insieme la soluzione giusta per te.
+**Hai bisogno di un intervento in quota?** Richiedi un preventivo gratuito: ti rispondiamo con una soluzione su misura.
 
 </div>
 

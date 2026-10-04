@@ -1,9 +1,9 @@
 ---
 layout: page
-title: chi siamo
+title: Chi siamo
 nav: false
 permalink: /chi-siamo/
-description: Web agency a Roma dal 2013. Strategia, siti, e-commerce, campagne e applicativi su misura.
+description: Italfuni, edilizia su fune a Roma e nel Lazio: interventi rapidi, senza ponteggi, con operatori formati da istruttori di alpinismo e speleologia.
 ---
 
 <style>
@@ -41,70 +41,63 @@ html[data-theme="dark"] .cs-num div,html[data-theme="dark"] .cs-card,html[data-t
 
 <div class="cs-hero">
   <span class="cs-eyebrow">Chi siamo</span>
-  <h2>Trasformiamo idee e obiettivi di business in piattaforme digitali che funzionano.</h2>
-  <p>Siamo una web agency di Roma e lavoriamo dal 2013 con imprenditori, start up, grandi aziende e Pubblica Amministrazione. Non vendiamo pacchetti preconfezionati: partiamo dal tuo business, capiamo dove vuoi arrivare e costruiamo il percorso più concreto per arrivarci.</p>
+  <h2>Edilizia su fune: interventi rapidi, senza ponteggi, in totale sicurezza.</h2>
+  <p>Italfuni nasce da un modo nuovo di fare edilizia, con radici alpinistiche. Ci ancoriamo a un punto solido e raggiungiamo qualsiasi punto di palazzi e grandi strutture, senza impalcature né piattaforme aeree. Operiamo a Roma, nel Lazio e nei paesi vicini.</p>
   <div class="cs-cta">
-<a class="cs-btn pri" href="{{ '/contatti/' | relative_url }}">Richiedi un preventivo</a>
+<a class="cs-btn pri" href="{{ '/contatti/' | relative_url }}">Preventivo gratuito</a>
 <a class="cs-btn" href="{{ '/servizi/' | relative_url }}">Scopri i servizi</a>
   </div>
 </div>
 
 <div class="cs-num">
-  <div><b>Dal 2013</b><small>a Roma, sul campo</small></div>
-  <div><b>24 ore</b><small>per la nostra risposta*</small></div>
-  <div><b>1° incontro</b><small>di consulenza gratuito</small></div>
-  <div><b>Privato e PA</b><small>esperienza con entrambi</small></div>
+  <div><b>Fino al 40%</b><small>di risparmio sui costi</small></div>
+  <div><b>Meno di 1 ora</b><small>per iniziare a intervenire</small></div>
+  <div><b>24 ore</b><small>per ricontattarti*</small></div>
+  <div><b>Gratuiti</b><small>sopralluogo e preventivo</small></div>
 </div>
-<p class="cs-nota">*Festivi esclusi.</p>
+<p class="cs-nota">*Giorni lavorativi.</p>
 
 <div class="cs-sec">
-  <h2>Come lavoriamo</h2>
-  <p class="cs-sub">Un unico gruppo di professionisti segue il progetto dall'inizio alla fine, così niente passaggi di mano e niente messaggi che si perdono.</p>
+  <h2>Perché intervenire su fune</h2>
+  <p class="cs-sub">Sempre più persone scelgono questo approccio. Questi i motivi.</p>
   <div class="cs-grid">
-    <div class="cs-card cs-step"><i>01</i><b>Ascolto e analisi</b><p>Studiamo attività, mercato e concorrenti. Definiamo insieme gli obiettivi e come misurarli.</p></div>
-    <div class="cs-card cs-step"><i>02</i><b>Strategia</b><p>Traduciamo l'analisi in un piano chiaro: priorità, tempi, budget e canali giusti per te.</p></div>
-    <div class="cs-card cs-step"><i>03</i><b>Progetto e sviluppo</b><p>Design, contenuti e tecnologia prendono forma: siti, e-commerce, campagne e applicativi su misura.</p></div>
-    <div class="cs-card cs-step"><i>04</i><b>Misura e migliora</b><p>Guardiamo i numeri, non le impressioni. Ottimizziamo nel tempo per far crescere i risultati.</p></div>
+    <div class="cs-card"><b>Niente ponteggi</b><p>Non serve installare o affittare ponteggi e installazioni aeree.</p></div>
+    <div class="cs-card"><b>Meno burocrazia</b><p>Non servono permessi*, la burocrazia è ridotta.</p></div>
+    <div class="cs-card"><b>Costi più bassi</b><p>Abbattimento dei prezzi fino al 40%.</p></div>
+    <div class="cs-card"><b>Interventi frazionabili</b><p>Senza impalcature si può dare priorità agli interventi più urgenti e rateizzare i costi.</p></div>
+    <div class="cs-card"><b>Zero pensieri</b><p>Interventi di manutenzione programmata con la formula ZERO PENSIERI.</p></div>
+    <div class="cs-card"><b>Nessun rischio intrusione</b><p>Eliminato il rischio di intrusioni agevolate dai classici ponteggi.</p></div>
   </div>
 </div>
 
 <div class="cs-sec">
   <h2>Cosa facciamo</h2>
-  <p class="cs-sub">Tutto ciò che serve per essere trovati, scelti e ricordati online.</p>
+  <p class="cs-sub">Manutenzione e ristrutturazione in quota, ovunque serva.</p>
   <div class="cs-grid">
-    <a class="cs-card" href="{{ '/servizi/' | relative_url }}"><b>Siti e piattaforme</b><p>Siti aziendali, portali e applicativi sviluppati sulle esigenze reali del tuo business.</p></a>
-    <a class="cs-card" href="{{ '/servizi/' | relative_url }}"><b>E-commerce</b><p>Negozi online pensati per vendere, dalla scelta della piattaforma alla crescita.</p></a>
-    <a class="cs-card" href="{{ '/servizi/' | relative_url }}"><b>Web marketing</b><p>SEO, campagne e social per portare le persone giuste sul tuo sito.</p></a>
-    <a class="cs-card" href="{{ '/servizi/' | relative_url }}"><b>Brand identity</b><p>Un'immagine coerente e riconoscibile, dal logo all'esperienza d'uso.</p></a>
-    <a class="cs-card" href="{{ '/servizi/' | relative_url }}"><b>Comunicazione</b><p>Contenuti e messaggi che raccontano chi sei a chi conta davvero.</p></a>
-    <a class="cs-card" href="{{ '/servizi/' | relative_url }}"><b>Consulenza</b><p>Analisi e strategia per decidere dove investire, prima di spendere.</p></a>
+    <a class="cs-card" href="{{ '/servizi/' | relative_url }}"><b>Grondaie</b><p>Manutenzione, riparazione e sostituzione grondaie.</p></a>
+    <a class="cs-card" href="{{ '/servizi/' | relative_url }}"><b>Risanamento facciate</b><p>Ristrutturazione o manutenzione di balconi, facciate, casse camino e cornicioni.</p></a>
+    <a class="cs-card" href="{{ '/servizi/' | relative_url }}"><b>Tinteggiature</b><p>Tinteggiatura esterna e manutenzione su tetti senza ponteggi e permessi comunali.</p></a>
+    <a class="cs-card" href="{{ '/servizi/' | relative_url }}"><b>Pulizia vetri</b><p>Pulizia vetri di grattacieli e palazzi.</p></a>
+    <a class="cs-card" href="{{ '/servizi/' | relative_url }}"><b>Messa in sicurezza</b><p>Rimozione rapida e mirata di parti pericolanti.</p></a>
+    <a class="cs-card" href="{{ '/servizi/' | relative_url }}"><b>Impermeabilizzazioni</b><p>Lastre d'ardesia, terrazzi e tetti.</p></a>
   </div>
 </div>
 
 <div class="cs-sec">
-  <h2>Perché scegliere noi</h2>
+  <h2>Perché noi</h2>
   <div class="cs-grid c2">
-    <div class="cs-card"><b>Analisi su misura</b><p>Ogni progetto nasce dal tuo business e dai tuoi obiettivi, non da un modello standard.</p></div>
-    <div class="cs-card"><b>Creatività e concretezza</b><p>Idee che si vedono e numeri che si leggono: puntiamo a risultati misurabili.</p></div>
-    <div class="cs-card"><b>Un solo interlocutore</b><p>Dalla strategia al risultato, un team coordinato che risponde di tutto il progetto.</p></div>
-    <div class="cs-card"><b>Tempi di risposta certi</b><p>Ti rispondiamo entro 24 ore (festivi esclusi) e la prima consulenza è gratuita.</p></div>
-  </div>
-</div>
-
-<div class="cs-sec">
-  <h2>Per chi lavoriamo</h2>
-  <div class="cs-grid">
-    <div class="cs-card"><b>Imprenditori e PMI</b><p>Portiamo online l'attività e la aiutiamo a crescere con strumenti che si ripagano.</p></div>
-    <div class="cs-card"><b>Start up</b><p>Dal lancio alla scalata: piattaforme flessibili e una comunicazione che parte col piede giusto.</p></div>
-    <div class="cs-card"><b>Grandi aziende e PA</b><p>Progetti strutturati, processi chiari e attenzione a requisiti e continuità.</p></div>
+    <div class="cs-card"><b>Totale sicurezza</b><p>Ogni membro del team esegue corsi e aggiornamenti da istruttori di alpinismo e speleologia.</p></div>
+    <div class="cs-card"><b>Tutto è accessibile</b><p>Per noi non esiste un punto dell'edificio o una piattaforma aerea inaccessibile.</p></div>
+    <div class="cs-card"><b>Prezzi competitivi</b><p>Niente ponteggi e niente macchinari costosi da affittare: il prezzo si abbassa.</p></div>
+    <div class="cs-card"><b>Tempistiche rapide</b><p>Ci serve solo un punto solido dove ancorarci: possiamo operare il giorno stesso, anche in meno di un'ora.</p></div>
   </div>
 </div>
 
 <div class="cs-final">
-  <h2>Vuoi far crescere il tuo business?</h2>
-  <p>Raccontaci di cosa hai bisogno: costruiamo insieme la soluzione giusta per te. La prima consulenza è gratuita.</p>
+  <h2>Vuoi un preventivo?</h2>
+  <p>Compila il modulo nei contatti: sopralluogo e preventivo sono gratuiti e senza impegno, ti ricontattiamo entro 24 ore (giorni lavorativi). Con WhatsApp possiamo anche darti subito un preventivo approssimativo senza sopralluogo: descrivi l'intervento nel messaggio.</p>
   <div class="cs-cta">
-<a class="cs-btn pri" href="{{ '/contatti/' | relative_url }}">Richiedi un preventivo</a>
+<a class="cs-btn pri" href="{{ '/contatti/' | relative_url }}">Preventivo gratuito</a>
 <a class="cs-btn" href="{{ '/servizi/' | relative_url }}">Scopri i servizi</a>
   </div>
 </div>

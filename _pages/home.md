@@ -86,6 +86,47 @@ Evitare ponteggi, piattaforme aeree e permessi comunali rende l'intervento più 
 
 </div>
 
+<!-- ===== FN HOME START (1): perche' su fune + preventivo ===== -->
+<style>
+/* ===== FN HOME (testi dal sito originale italfuni.it: perche' su fune, preventivo, perche' noi, lavora con noi) ===== */
+.fn-sec{max-width:900px;margin:2.5rem auto;padding:0 8px}
+.fn-sec h2{text-align:center;margin-bottom:1rem}
+.fn-sec > p{text-align:center;max-width:720px;margin:0 auto 1rem}
+.fn-list{max-width:760px;margin:0 auto;padding-left:1.2rem;line-height:1.6}
+.fn-list li{margin-bottom:.45rem}
+.fn-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:1.2rem}
+.fn-card{padding:16px 18px;border:1px solid rgba(0,0,0,.12);border-radius:12px;background:#fffdf5;text-align:left}
+.fn-card b{display:block;margin-bottom:4px}
+.fn-card p{margin:0;opacity:.85}
+html[data-theme="dark"] .fn-card{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.15)}
+.fn-nota{font-size:.85rem;opacity:.65;text-align:center;margin-top:.6rem}
+@media (max-width:700px){.fn-grid{grid-template-columns:1fr}}
+</style>
+
+<div class="fn-sec">
+  <h2>Perché intervenire su fune?</h2>
+  <p>Al giorno d'oggi molte persone scelgono questo nuovo approccio di fare edilizia. Scopriamo insieme i motivi:</p>
+  <ul class="fn-list">
+    <li>Risoluzione immediata di piccoli problemi strutturali ed estetici in posti inaccessibili.</li>
+    <li>Non serve l'installazione o l'affitto di ponteggi o installazioni aeree.</li>
+    <li>Non servono permessi*.</li>
+    <li>Burocrazia ridotta.</li>
+    <li>Abbattimento dei prezzi fino al 40%.</li>
+    <li>Possibilità di frazionare gli interventi in base alla necessità del cliente: senza impalcature si dà priorità agli interventi più urgenti, rateizzando i costi.</li>
+    <li>Interventi di manutenzione programmata con la formula ZERO PENSIERI.</li>
+    <li>Eliminazione del rischio intrusione agevolato dall'installazione dei classici ponteggi.</li>
+    <li>Operatori altamente qualificati che possono intervenire in meno di un'ora in ogni punto del palazzo o di grandi strutture, risolvendo tempestivamente il problema.</li>
+  </ul>
+</div>
+
+<div class="fn-sec">
+  <h2>Come fare un preventivo?</h2>
+  <p>Per un preventivo gratuito e senza impegno, con sopralluogo gratuito, basta fare click su <a href="{{ '/contatti/' | relative_url }}">contatti</a> in alto e compilare il modulo: verrai ricontattato entro 24 ore (giorni lavorativi).</p>
+  <p>Sai utilizzare WhatsApp? Possiamo fare un preventivo approssimativo immediato e gratuito, senza sopralluogo: descrivi dettagliatamente il tipo di intervento da fare nel messaggio.</p>
+  <p class="fn-nota"><b>Attenzione:</b> operiamo nel territorio laziale e nei paesi vicini.</p>
+</div>
+<!-- ===== FN HOME END (1) ===== -->
+
 <!-- ===== SERVIZI HOME START (DINAMICO) =====
      Le card NON sono scritte a mano: il ciclo Liquid prende i documenti della collection 'servizi' con 'in_home: true' (casetta nell'admin, sezione Servizi).
      Campo SEPARATO dalla stella del blog ('featured'): non si mescolano. Ordine alfabetico per titolo (i post hanno la stessa data, per data l'ordine non sarebbe stabile).
@@ -131,6 +172,26 @@ Evitare ponteggi, piattaforme aeree e permessi comunali rende l'intervento più 
 </div>
 {%- endif %}
 <!-- ===== PROGETTI HOME END ===== -->
+
+<!-- ===== FN HOME START (2): perche' noi + lavora con noi ===== -->
+<div class="fn-sec">
+  <h2>Perché noi?</h2>
+  <div class="fn-grid">
+    <div class="fn-card"><b>Totale sicurezza</b><p>Ogni membro del nostro team esegue corsi e aggiornamenti da istruttori di alpinismo e speleologia.</p></div>
+    <div class="fn-card"><b>Tutto è accessibile</b><p>Raggiungere e operare in punti inaccessibili è il nostro pane quotidiano: per noi non esiste un punto dell'edificio o una piattaforma aerea inaccessibile.</p></div>
+    <div class="fn-card"><b>Prezzi competitivi</b><p>Questa innovazione edilizia con radici alpinistiche permette di abbattere il prezzo. Non serve installare piattaforme o ponteggi, né affittare costosi macchinari.</p></div>
+    <div class="fn-card"><b>Tempistiche</b><p>Non serve installare nessun ponteggio o piattaforma: ci basta un punto solido dove ancorarci e operare il giorno stesso.</p></div>
+    <div class="fn-card"><b>Zero ponteggi</b><p>Scordati l'installazione di piattaforme o ponteggi. I nostri operatori sono in grado di iniziare a lavorare dopo meno di un'ora.</p></div>
+  </div>
+</div>
+
+<div class="fn-sec">
+  <h2>Lavora con noi</h2>
+  <p>Ti senti predisposto per questo tipo di lavoro? Inviaci la candidatura nell'area <a href="{{ '/contatti/' | relative_url }}">contatti</a>.</p>
+  <p class="fn-nota"><b>Italfuni</b> - Monterotondo, Roma (RM) - Tel. <a href="tel:+393281970254">(328) 1970254</a><br>Orari ufficio: Lun-Ven 8:00-19:00, Sab 8:00-14:00, Dom chiuso.</p>
+</div>
+<!-- ===== FN HOME END (2) ===== -->
+
 
 {%- if site.home_marte != false %}
 <script>

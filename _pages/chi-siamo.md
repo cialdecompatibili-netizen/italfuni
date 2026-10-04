@@ -3,7 +3,7 @@ layout: page
 title: Chi siamo
 nav: false
 permalink: /chi-siamo/
-description: Italfuni, edilizia su fune a Roma e nel Lazio: interventi rapidi, senza ponteggi, con operatori formati da istruttori di alpinismo e speleologia.
+description: "Italfuni, edilizia su fune a Roma e nel Lazio. Interventi rapidi, senza ponteggi, con operatori formati da istruttori di alpinismo e speleologia."
 ---
 
 <style>

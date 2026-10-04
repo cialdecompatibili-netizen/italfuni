@@ -425,3 +425,4 @@ Creato il 2026-09-20 copiando crazyweb3 senza la cronologia git (un solo commit 
 - 2026-10-04: nome del repo in alto a sinistra (`#repoName`) evidenziato in giallo (`<b>` creato da `start()` in `admin.js`, stile `.side .brand small b` in `admin.css`), per non sbagliare sito tra cloni.
 - 2026-10-04 (2): il nome del repo e' anche in una pastiglia gialla nella barra in alto (`#topRepo`, visibile su mobile) e nel titolo della scheda. Costruito col DOM, mai innerHTML (REPO e' input utente).
 - 2026-10-05: nuova vista Note (Sito > Note, `admin-note.js`): appunti salvati in `_data/note_admin.txt`, senza deploy (scrive con A.api PUT, non putFile). Vedi CLAUDE.md punto 35.
+- 2026-10-05 (2): nuova vista Gruppi servizi (Contenuti > Gruppi servizi, `admin-servizi-gruppi.js`) per modificare `_data/servizi_gruppi.yml`. Vedi CLAUDE.md punto 36.

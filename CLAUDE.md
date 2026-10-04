@@ -141,3 +141,35 @@ Other gates:
 36. **SERVIZI PER PROVINCIA + GRUPPI MODIFICABILI (05/10/2026).** I 52 articoli 'servizi per provincia' di italfuni.it (Roma 11, Latina 11, Viterbo 11, Rieti 10, Frosinone 9) sono in `_servizi/` con `gruppo: "<Provincia> e provincia"`; i 14 generali hanno `gruppo: "I nostri servizi"`. Script: `importa_province.py` (elenco dalla categoria WP /servizio/servizi-per-provincia/, pagine /page/N/; provincia dal link 'Edilizia su fune X'). Le sezioni di /servizi/ stanno in `_data/servizi_gruppi.yml` (ordine = ordine in pagina) e si modificano da admin > Contenuti > **Gruppi servizi** (`admin/admin-servizi-gruppi.js`: un gruppo per riga, commit 'admin: gruppi servizi'). PUNTO CRITICO: se si rinomina o toglie un gruppo, i servizi col vecchio nome vanno in 'Altri servizi' finche' non si riassegna il campo `gruppo` (admin > Servizi, azione di gruppo). I testi delle province sono molto simili tra loro (rischio contenuto duplicato per Google): da variare in seguito. Link esterni (Wikipedia, servizi.lazio.it) tolti dai testi. Non provato nel browser, solo sintassi.
 
 37. **CODA WORDPRESS NEGLI ARTICOLI IMPORTATI (TRABOCCHETTO, 05/10/2026).** Nei 52 articoli per provincia l'import aveva lasciato IN FONDO al testo un blocco di scarto della galleria WP: riga con l'url `https://italfuni.it/wp-content/uploads/...jpg` (o `italfuni-logo.png`), poi due numeri (es. 967 e 2032), `italfuni`, riga con l'url del logo + date + titolo. Va tolto SEMPRE. `importa_province.py` ora lo taglia (regex dopo il filtro SPAM); per file gia' importati: `python pulisci_coda.py` dalla radice della repo (idempotente, mantiene CRLF). Nel prossimo clone: dopo l'import cercare `wp-content/uploads` nei .md e controllare le ultime righe di 2-3 articoli prima del push. Per clonare un sito simile: copiare `importa_province.py` (cambiare BASE, categoria e dizionario PROV) e rifare la procedura dei punti 34 e 36.
+
+
+34. **MENU E SOTTOMENU (header.liquid, nessun file di menu separato).** Il menu NON ha un file suo: `_includes/header.liquid` scorre `site.pages` ordinate per `nav_order` e stampa ogni pagina con `nav: true`. Una voce = una pagina. Le voci-link senza pagina stanno in `_data/menu_links.yml` (admin > Menu).
+    - **Voce semplice:** front matter `nav: true`, `nav_order: 4`, `permalink: /foto/`. L'ordine e' il numero (Home 0.3, La villa 1, Servizi 2, Eventi 3, Foto 4, Blog 5, Location 6, Contatti 20). Per nascondere: `nav: false`.
+    - **Tendina:** sulla pagina padre si aggiunge `dropdown: true` e `children:` (lista di `title` + `permalink`). Il padre NON e' cliccabile (href="#"): apre solo la tendina. La pagina padre deve comunque esistere (anche solo come elenco), altrimenti la voce non compare.
+    - **Righe divisorie:** tra due voci si inserisce una voce speciale con `title: "divider"` (stampa `<div class="dropdown-divider">`, stile nativo del tema). MAI la riga dopo l'ultima voce e MAI due divider di fila. N voci = N-1 divider.
+    - **Freccetta del padre:** e' nativa (`.dropdown-toggle:after` del tema). Non si disegna a mano: basta `dropdown: true`.
+    - **Il titolo del figlio deve essere IDENTICO al `title` della pagina collegata:** il tema evidenzia la voce attiva confrontando i titoli (`page.title == child.title`).
+    - **Il permalink del figlio va scritto SENZA baseurl** (`/servizi/la-villa/`): il tema aggiunge `relative_url`. Link esterni: URL completo con `://`.
+    - **Un solo livello:** niente sottomenu dentro i sottomenu.
+    - **Il CSS del divider esce solo se la classe e' usata** (il tema genera gli stili dalle classi presenti): un menu senza divider non ha neanche lo stile. Se un clone non mostra le righe, controllare che il front matter contenga davvero `title: "divider"`.
+    - **Id univoci:** ogni tendina ha `id="navbarDropdown-{{ forloop.index }}"` (prima era uguale per tutte). Non rimettere id fissi.
+    - **Pagina gestita da script:** `chi_siamo.json` rigenera `_pages/chi-siamo.md` (nav, nav_order, permalink). Per cambiare il menu di quella pagina si modifica il JSON e si rilancia `pubblica_chi_siamo.py`, non il .md.
+    - **Esempio completo (`_pages/eventi.md`):**
+      ```
+      ---
+      layout: page
+      title: Eventi
+      nav: true
+      nav_order: 3
+      permalink: /eventi/
+      dropdown: true
+      children:
+        - title: "Matrimonio civile"
+          permalink: /servizi/matrimonio-civile/
+        - title: "divider"
+          permalink: "#"
+        - title: "Meeting aziendali"
+          permalink: /servizi/meeting-aziendali/
+      ---
+      ```
+    - **Errori tipici:** titolo del figlio diverso dalla pagina (voce mai evidenziata); permalink con `/villatrecolli/` davanti (link doppio); `dropdown: true` senza `children` (tendina vuota); `nav: true` su due pagine con lo stesso `nav_order` (ordine casuale); divider in coda (riga finale inutile).

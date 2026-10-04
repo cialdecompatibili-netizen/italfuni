@@ -19,6 +19,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from repos_auto import completa
+
 QUI = Path(__file__).resolve().parent
 REPOS_JSON = QUI / "repos.json"
 CONTENUTO_JSON = QUI / "chi_siamo.json"
@@ -40,7 +42,7 @@ def risolvi_repos(cfg: dict) -> dict:
         d = Path(r["dir"])
         if not d.is_absolute():
             d = (QUI / d).resolve()
-        out[nome] = {**r, "dir": d}
+        out[nome] = completa({**r, "dir": d})  # remoto/baseurl mancanti o "auto": dal git origin
     return out
 
 

@@ -41,6 +41,7 @@ except Exception:
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import genera_servizi as G
+from repos_auto import completa
 from servizi_data import SERVIZI
 
 import json
@@ -52,6 +53,7 @@ def carica_cfg():
         c = json.load(f)
     for r in c["repos"].values():
         r["dir"] = os.path.normpath(os.path.join(HERE, r["dir"]))
+        completa(r)  # remoto/baseurl mancanti o "auto": ricavati dal git origin
     return c
 
 

@@ -6,6 +6,10 @@ Regola identica a .github/workflows/deploy.yml (un clone funziona senza toccare 
   - repo <utente>.github.io    -> sito in root, baseurl vuoto
   - altrimenti                 -> baseurl "/<nome-repo>"
 
+PUNTO CRITICO: questa regola e' COPIATA da .github/workflows/deploy.yml (shell) e da
+automazioni/common/config.py (owner/repo). Se ne cambi una, cambia anche le altre: se
+divergono, gli script pubblicano su un indirizzo diverso da quello che il deploy costruisce.
+
 In repos.json: "remoto" e "baseurl" mancanti oppure "auto" = ricavati qui.
 Scritti a mano = vincono (serve per PROD, dove il remoto atteso e' un controllo di sicurezza).
 """

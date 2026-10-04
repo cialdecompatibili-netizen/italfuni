@@ -42,7 +42,10 @@ def risolvi_repos(cfg: dict) -> dict:
         d = Path(r["dir"])
         if not d.is_absolute():
             d = (QUI / d).resolve()
-        out[nome] = completa({**r, "dir": d})  # remoto/baseurl mancanti o "auto": dal git origin
+        # PUNTO CRITICO: remoto/baseurl "auto" o mancanti = ricavati dal git origin (repos_auto.py, stessa
+        # regola di deploy.yml). Con "auto" il remoto non e' un controllo di sicurezza: per un repo protetto
+        # (prod) scrivilo esplicito in repos.json. Non scrivere mai nomi/URL nel codice.
+        out[nome] = completa({**r, "dir": d})
     return out
 
 

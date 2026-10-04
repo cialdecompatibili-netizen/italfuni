@@ -42,6 +42,10 @@ def _owner_repo_da_git():
         return (None, None)
 
 
+# PUNTO CRITICO: ordine di precedenza owner/repo = variabile d'ambiente > automazioni/.env > git origin.
+# Se in automazioni/.env resta GITHUB_REPO scritto a mano (es. copiato da un altro sito), vince su origin e gli
+# script scrivono sul repo SBAGLIATO: nei cloni togliere GITHUB_OWNER/GITHUB_REPO dal .env, lasciare solo il token.
+# La regola owner/repo e' la stessa di repos_auto.py e deploy.yml: se ne cambi una, cambia anche le altre.
 _G_OWNER, _G_REPO = _owner_repo_da_git()
 
 TOKEN = os.environ.get("GITHUB_TOKEN") or _env.get("GITHUB_TOKEN")

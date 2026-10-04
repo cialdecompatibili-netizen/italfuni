@@ -28,11 +28,3 @@ In tutti i lavori in quota su funi vengono utilizzate attrezzature tecniche (**D
 La nostra azienda offre **supporto professionale** durante le varie fasi, dallo studio di fattibilità alla pianificazione e monitoraggio del progresso del lavoro diventando parte integrante del progetto del cliente e contribuendo alla produzione del progetto.
 
 *Chiamaci senza impegno per un preventivo!!!*
-
-https://italfuni.it/wp-content/uploads/2018/06/materiale-pericolante.jpg
-601
-800
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-25 11:59:132026-01-11 22:16:52Rimozione materiale pericolane su fune a Frosinone

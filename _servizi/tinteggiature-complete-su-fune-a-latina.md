@@ -32,11 +32,3 @@ Sono numerosi i motivi per cui sceglierci:
 - Utilizzo di **vernici di alta qualità**, che garantiscono una protezione più duratura degli agenti atmosferici
 
 *Chiamaci subito e ottieni un preventivo gratuito, senza impegno!!!!*
-
-https://italfuni.it/wp-content/uploads/2018/06/tinteggiatura.jpg
-533
-800
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-21 15:20:152026-01-11 22:16:53Tinteggiature complete su fune a Latina

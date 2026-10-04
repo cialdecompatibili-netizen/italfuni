@@ -46,11 +46,3 @@ Attraverso un sopralluogo tecnico, il nostro personale altamente qualificato ver
 Gli interventi potranno essere eseguiti in un qualunque periodo dell’anno, salvo periodi di forte pioggia o vento ed almeno per una volta l’anno.
 
 Quindi se stai cercando esperti di questo settore sei nel posto giusto. Chiedici un **preventivo assolutamente gratuito e senza impegno**!
-
-https://italfuni.it/wp-content/uploads/2018/05/pulizia-grondaie-su-fune.jpg
-967
-2032
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-05-02 16:02:592026-01-11 22:16:53Manutenzione, sostituzioni e pulizia grondaie a Roma

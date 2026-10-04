@@ -55,11 +55,3 @@ L’utilizzo di questa tecnica infine permette un estremo **adattamento al terre
 - potatura alberi Latina.
 
 Non esitate a contattarci per un **preventivo gratuito**, veloce e senza impegno!
-
-https://italfuni.it/wp-content/uploads/2018/06/potatura-albero-con-corde.jpg.jpg
-640
-480
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-26 21:01:302026-01-11 22:16:52Potatura alberi Rieti

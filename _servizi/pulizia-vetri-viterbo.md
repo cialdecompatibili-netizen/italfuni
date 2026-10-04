@@ -56,11 +56,3 @@ Se invece è il tuo tetto ad avere bisogno di un intervento ecco il servizio su 
 - [pulizia vetri Frosinone]({{ '/servizi/pulizia-vetri-frosinone/' | relative_url }}).
 
 Richiedi un **preventivo gratuito** per risparmiare sulla pulizia delle tue vetrate ad alta quota grazie ad **Italfuni**. Ti stupiremo perla nostra professionalità e per l’ottimo rapporto qualità prezzo.
-
-https://italfuni.it/wp-content/uploads/2018/05/pulizia-vetri-su-fune.jpg
-800
-1200
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-18 12:36:102026-01-11 22:16:53Pulizia vetri su fune a Viterbo e provincia

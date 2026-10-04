@@ -32,11 +32,3 @@ Sono numerosi i motivi per cui sceglierci:
 - Utilizzo di **vernici di alta qualità**, che garantiscono una protezione più duratura dagli agenti atmosferici e dall’erosione
 
 *Chiamaci subito e ottieni un preventivo gratuito, senza impegno!!!!*
-
-https://italfuni.it/wp-content/uploads/2018/06/tinteggiatura-su-fune-1-705x296-1.jpg
-296
-705
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-19 14:26:512026-01-11 22:16:53Tinteggiature complete a Viterbo

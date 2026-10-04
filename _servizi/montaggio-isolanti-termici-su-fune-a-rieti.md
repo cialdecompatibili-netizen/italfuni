@@ -38,11 +38,3 @@ Affidandoti a noi di Italfuni otterrai benefici come:
 L’installazione di rivestimenti termoisolanti viene effettuata su qualsiasi base: sversamenti di legno, muratura, cemento armato, calcestruzzo espanso.
 
 *Non esitare a contattarci per un preventivo con sopralluogo gratuito senza impegno.*
-
-https://italfuni.it/wp-content/uploads/2018/06/isolanti.jpg
-299
-400
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-26 14:49:172026-01-11 22:16:52Montaggio isolanti termici su fune a Rieti

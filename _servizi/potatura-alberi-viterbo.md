@@ -52,11 +52,3 @@ Qui parliamo di interventi da fare una tantum. La rimozione di rami pericolanti 
 - potatura alberi a Latina.
 
 Contattaci per un preventivo gratuito e senza impegno. Italfuni può risolvere ogni tuo problema.
-
-https://italfuni.it/wp-content/uploads/2018/06/potatura-albero-con-corde.jpg.jpg
-640
-480
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-19 15:58:142026-01-11 22:16:53Potatura alberi Viterbo

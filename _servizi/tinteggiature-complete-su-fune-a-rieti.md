@@ -32,11 +32,3 @@ Sono numerosi i motivi per cui sceglierci:
 - Utilizzo di **vernici di alta qualità**, che garantiscono una protezione più duratura degli agenti atmosferici
 
 *Chiamaci subito e ottieni un preventivo gratuito, senza impegno!!!!*
-
-https://italfuni.it/wp-content/uploads/2018/06/tinteggiatura-su-fune-1-705x296.jpg
-296
-705
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-26 12:02:242026-01-11 22:16:52Tinteggiature complete su fune a Rieti

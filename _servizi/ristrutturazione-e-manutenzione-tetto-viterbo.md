@@ -55,11 +55,3 @@ Se invece hai **vetri** difficilmente raggiungibili o lucernari da pulire ecco i
 - riparazione tetti Frosinone.
 
 Cosa aspetti? Fai la scelta giusta, chiama senza impegno per un **preventivo gratuito al 100%**. Rimarrai stupito dalla nostra professionalità e dal rapporto qualità- prezzo!
-
-https://italfuni.it/wp-content/uploads/2018/06/riparazione-tetti.jpg
-701
-1023
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-26 21:05:512026-01-11 22:16:52Ristrutturazione e manutenzione tetto Viterbo

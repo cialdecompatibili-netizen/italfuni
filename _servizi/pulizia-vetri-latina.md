@@ -58,11 +58,3 @@ Se invece è il tuo tetto ad avere bisogno di un intervento ecco il servizio su 
 - [pulizia vetri Rieti]({{ '/servizi/pulizia-vetri-rieti/' | relative_url }}).
 
 Richiedi un **preventivo gratuito** per risparmiare sulla pulizia dei tuoi vetri ad alta quota grazie ad Italfuni.
-
-https://italfuni.it/wp-content/uploads/2018/06/rope-access-window-cleaning.jpg
-280
-640
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-22 11:33:292026-01-11 22:16:53Pulizia vetri su fune a Latina e provincia

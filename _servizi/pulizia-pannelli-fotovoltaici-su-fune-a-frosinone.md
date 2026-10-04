@@ -56,11 +56,3 @@ Risparmio e professionalità ma non solo. Se hai ancora qualche dubbio puoi tran
 Inoltre **potrai richiedere un preventivo gratuito e senza impegno** con un sopralluogo incluso nel servizio. Per velocizzare tutto consigliamo di utilizzare Whatsapp scattando le foto dei pannelli solari da pulire inviandocele.
 
 Non sei della zona di Frosinone? Allora leggi qui: pulizia pannelli solari su fune a [Roma]({{ '/servizi/pulizia-pannelli-fotovoltaici-su-fune-a-roma/' | relative_url }}) – [Latina]({{ '/servizi/pulizia-pannelli-fotovoltaici-su-fune-a-latina/' | relative_url }}) – [Viterbo]({{ '/servizi/pulizia-pannelli-fotovoltaici-a-viterbo/' | relative_url }}) – [Rieti]({{ '/servizi/pulizia-pannelli-fotovoltaici-su-fune-a-rieti/' | relative_url }}).
-
-https://italfuni.it/wp-content/uploads/2018/06/pannelli-fotov.jpg
-300
-300
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-25 12:16:242026-01-11 22:16:52Pulizia pannelli fotovoltaici su fune a Frosinone

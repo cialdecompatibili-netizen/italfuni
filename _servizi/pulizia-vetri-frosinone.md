@@ -61,11 +61,3 @@ Se invece è il tuo tetto ad avere bisogno di un intervento ecco il servizio su 
 - [pulizia vetri Latina]({{ '/servizi/pulizia-vetri-latina/' | relative_url }}).
 
 Richiedi un **preventivo gratuito!** Risparmierai sicuramente avvalendoti dei servizi di **Italfuni**!
-
-https://italfuni.it/wp-content/uploads/2018/06/pulizia-vetri-latina.jpg
-250
-250
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-24 23:42:232026-01-11 22:16:53Pulizia vetri su fune a Frosinone provincia

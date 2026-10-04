@@ -57,11 +57,3 @@ Se invece è il tuo tetto ad avere bisogno di un intervento ecco il servizio su 
 - [pulizia vetri Viterbo]({{ '/servizi/pulizia-vetri-viterbo/' | relative_url }}).
 
 Richiedi ora un **preventivo gratuito** per risparmiare pulendo vetri ad alta quota grazie ad Italfuni, esperti di qualità e sicurezza! Ti stupiremo per la nostra professionalità e l’ottimo rapporto qualità prezzo!
-
-https://italfuni.it/wp-content/uploads/2018/05/pulizia-vetri-su-fune.jpg
-800
-1200
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-26 12:27:062026-01-11 22:16:52Pulizia vetri su fune Rieti e provincia

@@ -31,11 +31,3 @@ Ogni intervento viene attentamente valutato dal nostro personale interno che si 
 In tutti i lavori in quota su funi vengono utilizzate specifiche attrezzature (Dispositivi di Protezione Individuale) certificate e sottoposte a rigorosi controlli di qualità.
 
 *Non esitare a chiamarci o a mandare una mail, siamo pronti a fornirti un preventivo personalizzato e gratuito!!!!*
-
-https://italfuni.it/wp-content/uploads/2018/06/operai-balconi.jpg
-480
-852
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-22 00:24:342026-01-11 22:16:53Ristrutturazione balconi e facciate su fune a Latina

@@ -32,11 +32,3 @@ L’installazione di **rivestimenti termoisolanti** viene effettuata su qualsias
 E con l’**accesso in corda** da noi usato sarà possibile eseguire in modo **economico e sicuro** qualsiasi servizio senza dover utilizzare installare piattaforme aeree, gru o impalcature.
 
 *Non esitare a contattarci per un preventivo con sopralluogo gratuito senza impegno.*
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-0
-0
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-05-04 16:06:152026-01-11 22:16:53Montaggio isolanti su fune a Roma

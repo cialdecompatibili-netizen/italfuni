@@ -32,11 +32,3 @@ Gli interventi si svolgeranno attraverso l’applicazione di uno stato di primer
 **Italfuni offre prodotti di alta qualità, conoscenze specialistiche sul campo e una serie di servizi di rilevamento degli edifici, come la stesura di bozze, la registrazione fotografica e altro ancora.**
 
 *Non aspettare, un team di esperti è pronto ad operare in tutta Roma, richiedi un preventivo gratuito senza impegno! Italfuni è con te!*
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-0
-0
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-04-30 18:11:372026-01-11 22:16:53Impermeabilizzazione su fune a Roma

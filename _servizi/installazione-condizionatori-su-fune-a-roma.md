@@ -40,11 +40,3 @@ Hai ad esempio hai problemi con la tua **grondaia** o devi riparare il tuo tetto
 Se invece hai **vetri** difficilmente raggiungibili o lucernari da pulire ecco il servizio fatto apposta per te: [pulizia vetri su fune Roma]({{ '/servizi/pulizia-vetri-roma/' | relative_url }}).
 
 Chiamaci per un **preventivo gratuito e senza alcun impegno**. Lavoriamo con estrema serietà su tutto il territorio di Roma e provincia!
-
-https://italfuni.it/wp-content/uploads/2018/06/Rope-Access-Air-Conditioning-Vent-Installation-4.jpg
-580
-300
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-29 11:40:162026-01-11 22:16:52Installazione condizionatori su fune a Roma e provincia

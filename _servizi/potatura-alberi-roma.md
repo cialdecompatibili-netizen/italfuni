@@ -48,11 +48,3 @@ Oltretutto questa tecnica permette un  **estremo adattamento al terreno**. In qu
 - potatura alberi Viterbo.
 
 Non esitate a contattarci per avere un **preventivo veloce, gratuito e senza alcun impegno**. I nostri esperti sono in grado di soddisfare ogni tua richiesta.
-
-https://italfuni.it/wp-content/uploads/2018/06/potatura-albero-con-corde.jpg.jpg
-640
-480
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-05-05 17:30:232026-01-11 22:16:53Potatura alberi Roma

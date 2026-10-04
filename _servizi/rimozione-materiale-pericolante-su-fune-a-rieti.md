@@ -32,11 +32,3 @@ Italfuni garantisce:
 - Gestione della conformità
 
 *Chiamaci senza impegno per un preventivo!!!*
-
-https://italfuni.it/wp-content/uploads/2018/06/materiale-pericolante.jpg
-601
-800
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-06-26 19:45:092026-01-11 22:16:52Rimozione materiale pericolante su fune a Rieti

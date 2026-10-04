@@ -61,11 +61,3 @@ La nostra azienda offre i suoi servizi su tutto il territorio della **regione La
 - [pulizia vetri Latina]({{ '/servizi/pulizia-vetri-latina/' | relative_url }}).
 
 Chiamaci per avere un **preventivo gratuito e senza impegno**. Ti sorprenderemo per la nostra professionalità e l’ottimo rapporto qualità prezzo!
-
-https://italfuni.it/wp-content/uploads/2018/05/pulizia-vetri-su-fune.jpg
-800
-1200
-italfuni
-
-https://italfuni.it/wp-content/uploads/2018/05/italfuni-logo.png
-italfuni2018-05-07 18:36:322026-01-11 22:16:53Pulizia di vetri su fune a Roma e provincia

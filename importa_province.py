@@ -113,6 +113,7 @@ for url, prov in posts.items():
     righe = [r for r in t.split("\n")]
     tolti = [r for r in righe if SPAM.search(r)]
     t = "\n".join(r for r in righe if not SPAM.search(r))
+    t = re.sub(r"(?s)\s*https?://italfuni\.it/wp-content/uploads/\S+\s+\d+\s+\d+\s+italfuni\b.*$", "", t)  # coda WP (url immagine, 967, 2032, italfuni, logo, date): va tolta
     t = re.sub(r"[ \t]+\n", "\n", t); t = re.sub(r"\n{3,}", "\n\n", t); t = re.sub(r"^\s*-\s*$\n?", "", t, flags=re.M).strip()
     if img: t = '{%% include immagine.liquid src="%s" alt="%s" align="center" %%}\n\n' % (img[0], img[1].replace('"', "'")) + t
     prima = re.sub(r"[#*_>`\-\[\]]|\{%.*?%\}", " ", next((r for r in t.split("\n\n") if len(r) > 60 and not r.startswith("{%")), ttl))

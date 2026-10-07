@@ -34,7 +34,7 @@ seo_description: "Lavori edili su fune senza ponteggi: pulizia vetri e grondaie,
    Il numero di foto e' libero: il blocco <style> generato da Liquid sotto (prima del box) calcola da solo durata del ciclo, ritardi e percentuali dei keyframes.
    Se _data/hero.yml non esiste o la lista e' vuota si usano le 5 foto di partenza scritte nel blocco Liquid. Per togliere tutto: cancella questo CSS, il blocco Liquid e il div .hero-bg. */
 .rete-box{overflow:hidden;border-radius:16px;color:#fff;padding:4.5rem 1.5rem;min-height:clamp(430px,62vh,620px);display:flex;flex-direction:column;justify-content:center;align-items:center;background:#0d1b2a}
-.rete-box > *:not(.hero-bg){position:relative;z-index:1;max-width:760px;line-height:2.05}
+.rete-box > *:not(.hero-bg){position:relative;z-index:1;max-width:760px}
 .rete-box h2{color:#fff}
 .rete-box strong{color:#fff}
 .hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
@@ -43,8 +43,8 @@ seo_description: "Lavori edili su fune senza ponteggi: pulizia vetri e grondaie,
 @media (max-width:600px){.rete-box{padding:3rem 1rem;border-radius:12px}}
 /* TESTO EVIDENZIATO al posto del velo scuro: ogni riga di testo ha il suo fondo blu notte semi-opaco (stile evidenziatore), cosi' si legge su qualunque foto
    e le foto restano luminose. box-decoration-break:clone ripete angoli e margini a ogni riga. Il colore e' un rgba: cambia l'ultimo numero (.82) per piu'/meno copertura. */
-.rete-box mark.hero-hl{background:rgba(10,22,38,.82);color:#fff;padding:.14em .6em;border-radius:7px;box-decoration-break:clone;-webkit-box-decoration-break:clone;text-shadow:none}
-.rete-box h2 mark.hero-hl{padding:.1em .5em}
+.rete-box mark.hero-hl{background:rgba(10,22,38,.82);color:#fff;padding:.08em .55em;border-radius:7px;line-height:1.7;box-decoration-break:clone;-webkit-box-decoration-break:clone;text-shadow:none}
+.rete-box h2 mark.hero-hl{padding:.05em .5em;line-height:1.5}
 /* ===== HERO FOTO END ===== */
 /* ===== MARTE START (css) - INTERRUTTORE: home_marte in _config.yml (admin > Impostazioni, CLAUDE.md punto 27). HTML e JS sono dentro una condizione Liquid su site.home_marte: tieni START/END e i relativi if/endif in coppia, altrimenti la home si rompe senza errori. Per rimuovere Marte del tutto: cancella da qui a MARTE END (css), il blocco MARTE nell'HTML, lo script MARTE (js) e assets/img/marte.webp ===== */
 .rete-box .marte-orbita{position:absolute;z-index:-2;pointer-events:none;left:50%;top:50%;width:0;height:0;will-change:transform}
@@ -120,7 +120,7 @@ html[data-theme="dark"] .prj-home-more a{border-color:rgba(255,255,255,.3)}
 
 <mark class="hero-hl">Evitare ponteggi, piattaforme aeree e permessi comunali rende l'intervento più rapido e fa risparmiare fino al 40%. Sopralluogo e preventivo sono gratuiti e senza impegno.</mark>
 
-<mark class="hero-hl">**Hai bisogno di un intervento in quota?** Richiedi un preventivo gratuito: ti rispondiamo con una soluzione su misura.</mark>
+<mark class="hero-hl"><strong>Hai bisogno di un intervento in quota?</strong> Richiedi un preventivo gratuito: ti rispondiamo con una soluzione su misura.</mark>
 
 </div>
 

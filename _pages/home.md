@@ -140,22 +140,21 @@ html[data-theme="dark"] .fn-card{background:rgba(255,255,255,.05);border-color:r
 .fn-nota{font-size:.85rem;opacity:.65;text-align:center;margin-top:.6rem}
 @media (max-width:700px){.fn-grid{grid-template-columns:1fr}}
 /* PERCHE' SU FUNE: 9 vantaggi in card bianche (cornice sottile, angoli molto arrotondati, ombra morbida), 3 colonne (2 sotto 900px, 1 sotto 600px).
-   Ogni card ha un'icona SVG inline (stile linea, nessuna libreria ne' font) dentro un riquadro tenue col colore del tema. L'ordine delle icone segue l'ordine dei 9 punti:
-   fulmine, divieto, documento barrato, cartella spuntata, percentuale, calendario, frecce di ripetizione, scudo, orologio. Per cambiarne una: sostituisci il suo <svg>.
+   Layout in RIGA: testo a sinistra, icona SVG a DESTRA (card bassa, non piu' icona sopra). Le card di una riga hanno la STESSA altezza (grid stretch) e il testo e'
+   centrato in verticale, con font un po' piu' piccolo e text-wrap:pretty per equilibrare righe corte e lunghe. Nessuna linea colorata all'hover: solo un leggero sollevamento.
+   Icone (ordine dei 9 punti): fulmine, divieto, documento barrato, cartella spuntata, percentuale, calendario, frecce di ripetizione, scudo, orologio. Per cambiarne una: sostituisci il suo <svg>.
    Testo scuro FISSO anche in tema scuro, perche' la card resta bianca. color-mix ha un ripiego (la riga prima) per i browser vecchi. */
 .fn-sec.fn-wide{max-width:1040px}
-.fn-van-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:1.6rem}
-.fn-van{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:26px 24px 28px;background:#fff;color:#1f2933;border:1px solid #e6e8ec;border-radius:22px;box-shadow:0 1px 2px rgba(16,24,40,.04),0 8px 24px -12px rgba(16,24,40,.12);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
-.fn-van::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--global-theme-color,#b509ac);opacity:0;transition:opacity .25s ease}
-.fn-van:hover{transform:translateY(-4px);border-color:#d5d9e0;box-shadow:0 2px 4px rgba(16,24,40,.05),0 18px 36px -14px rgba(16,24,40,.22)}
-.fn-van:hover::before{opacity:1}
-.fn-van-i{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:16px;color:var(--global-theme-color,#b509ac);background:rgba(181,9,172,.09);background:color-mix(in srgb,var(--global-theme-color,#b509ac) 11%,#fff)}
-.fn-van-i svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.fn-van p{margin:0;font-size:1rem;line-height:1.55;text-align:left;color:#3a4552}
+.fn-van-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:1.6rem;align-items:stretch}
+.fn-van{display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:14px;padding:18px 18px 18px 22px;min-height:112px;background:#fff;color:#1f2933;border:1px solid #e6e8ec;border-radius:22px;box-shadow:0 1px 2px rgba(16,24,40,.04),0 8px 24px -12px rgba(16,24,40,.12);transition:transform .25s ease,box-shadow .25s ease}
+.fn-van:hover{transform:translateY(-3px);box-shadow:0 2px 4px rgba(16,24,40,.05),0 16px 32px -14px rgba(16,24,40,.2)}
+.fn-van-i{order:2;flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:14px;color:var(--global-theme-color,#b509ac);background:rgba(181,9,172,.09);background:color-mix(in srgb,var(--global-theme-color,#b509ac) 11%,#fff)}
+.fn-van-i svg{width:23px;height:23px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.fn-van p{order:1;flex:1 1 auto;margin:0;font-size:.94rem;line-height:1.5;text-align:left;color:#3a4552;text-wrap:pretty}
 .fn-van strong{color:#111827}
 @media (max-width:900px){.fn-van-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:600px){.fn-van-grid{grid-template-columns:1fr}.fn-van{padding:22px 20px 24px}}
-@media (prefers-reduced-motion:reduce){.fn-van,.fn-van::before{transition:none}.fn-van:hover{transform:none}}
+@media (max-width:600px){.fn-van-grid{grid-template-columns:1fr}.fn-van{min-height:0}}
+@media (prefers-reduced-motion:reduce){.fn-van{transition:none}.fn-van:hover{transform:none}}
 </style>
 
 <div class="fn-sec fn-wide">

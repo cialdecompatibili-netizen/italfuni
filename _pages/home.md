@@ -136,33 +136,38 @@ Evitare ponteggi, piattaforme aeree e permessi comunali rende l'intervento più 
 html[data-theme="dark"] .fn-card{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.15)}
 .fn-nota{font-size:.85rem;opacity:.65;text-align:center;margin-top:.6rem}
 @media (max-width:700px){.fn-grid{grid-template-columns:1fr}}
-/* PERCHE' SU FUNE: 9 vantaggi in card bianche con cornice e angoli arrotondati, 3 colonne (2 sotto 900px, 1 sotto 600px).
-   Testo scuro FISSO anche in tema scuro, perche' la card resta bianca. Il numero e' in un cerchio col colore del tema. */
+/* PERCHE' SU FUNE: 9 vantaggi in card bianche (cornice sottile, angoli molto arrotondati, ombra morbida), 3 colonne (2 sotto 900px, 1 sotto 600px).
+   Ogni card ha un'icona SVG inline (stile linea, nessuna libreria ne' font) dentro un riquadro tenue col colore del tema. L'ordine delle icone segue l'ordine dei 9 punti:
+   fulmine, divieto, documento barrato, cartella spuntata, percentuale, calendario, frecce di ripetizione, scudo, orologio. Per cambiarne una: sostituisci il suo <svg>.
+   Testo scuro FISSO anche in tema scuro, perche' la card resta bianca. color-mix ha un ripiego (la riga prima) per i browser vecchi. */
 .fn-sec.fn-wide{max-width:1040px}
-.fn-van-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:1.4rem}
-.fn-van{display:flex;flex-direction:column;gap:12px;padding:20px 20px 22px;background:#fff;color:#1f2933;border:1px solid #dfe3e8;border-radius:18px;box-shadow:0 2px 10px rgba(16,24,40,.06);transition:transform .2s ease,box-shadow .2s ease}
-.fn-van:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(16,24,40,.12)}
-.fn-van-n{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--global-theme-color,#b509ac);color:#fff;font-weight:700;font-size:.85rem;letter-spacing:.02em}
-.fn-van p{margin:0;line-height:1.5;text-align:left;color:#1f2933}
-.fn-van strong{color:#111}
+.fn-van-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:1.6rem}
+.fn-van{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:16px;padding:26px 24px 28px;background:#fff;color:#1f2933;border:1px solid #e6e8ec;border-radius:22px;box-shadow:0 1px 2px rgba(16,24,40,.04),0 8px 24px -12px rgba(16,24,40,.12);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.fn-van::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--global-theme-color,#b509ac);opacity:0;transition:opacity .25s ease}
+.fn-van:hover{transform:translateY(-4px);border-color:#d5d9e0;box-shadow:0 2px 4px rgba(16,24,40,.05),0 18px 36px -14px rgba(16,24,40,.22)}
+.fn-van:hover::before{opacity:1}
+.fn-van-i{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:16px;color:var(--global-theme-color,#b509ac);background:rgba(181,9,172,.09);background:color-mix(in srgb,var(--global-theme-color,#b509ac) 11%,#fff)}
+.fn-van-i svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.fn-van p{margin:0;font-size:1rem;line-height:1.55;text-align:left;color:#3a4552}
+.fn-van strong{color:#111827}
 @media (max-width:900px){.fn-van-grid{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:600px){.fn-van-grid{grid-template-columns:1fr}}
-@media (prefers-reduced-motion:reduce){.fn-van{transition:none}.fn-van:hover{transform:none}}
+@media (max-width:600px){.fn-van-grid{grid-template-columns:1fr}.fn-van{padding:22px 20px 24px}}
+@media (prefers-reduced-motion:reduce){.fn-van,.fn-van::before{transition:none}.fn-van:hover{transform:none}}
 </style>
 
 <div class="fn-sec fn-wide">
   <h2>Perché intervenire su fune?</h2>
   <p>Al giorno d'oggi molte persone scelgono questo nuovo approccio di fare edilizia. Scopriamo insieme i motivi:</p>
   <div class="fn-van-grid">
-    <div class="fn-van"><span class="fn-van-n">01</span><p>Risoluzione immediata di piccoli problemi strutturali ed estetici in posti inaccessibili.</p></div>
-    <div class="fn-van"><span class="fn-van-n">02</span><p>Non serve l'installazione o l'affitto di ponteggi o installazioni aeree.</p></div>
-    <div class="fn-van"><span class="fn-van-n">03</span><p>Non servono permessi*.</p></div>
-    <div class="fn-van"><span class="fn-van-n">04</span><p>Burocrazia ridotta.</p></div>
-    <div class="fn-van"><span class="fn-van-n">05</span><p>Abbattimento dei prezzi <strong>fino al 40%</strong>.</p></div>
-    <div class="fn-van"><span class="fn-van-n">06</span><p>Possibilità di frazionare gli interventi in base alla necessità del cliente: senza impalcature si dà priorità agli interventi più urgenti, rateizzando i costi.</p></div>
-    <div class="fn-van"><span class="fn-van-n">07</span><p>Interventi di manutenzione programmata con la formula <strong>ZERO PENSIERI</strong>.</p></div>
-    <div class="fn-van"><span class="fn-van-n">08</span><p>Eliminazione del rischio intrusione agevolato dall'installazione dei classici ponteggi.</p></div>
-    <div class="fn-van"><span class="fn-van-n">09</span><p>Operatori altamente qualificati che possono intervenire in meno di un'ora in ogni punto del palazzo o di grandi strutture, risolvendo tempestivamente il problema.</p></div>
+    <div class="fn-van"><span class="fn-van-i"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></span><p>Risoluzione immediata di piccoli problemi strutturali ed estetici in posti inaccessibili.</p></div>
+    <div class="fn-van"><span class="fn-van-i"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8"/></svg></span><p>Non serve l'installazione o l'affitto di ponteggi o installazioni aeree.</p></div>
+    <div class="fn-van"><span class="fn-van-i"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="m9.5 12.5 5 5"/><path d="m14.5 12.5-5 5"/></svg></span><p>Non servono permessi*.</p></div>
+    <div class="fn-van"><span class="fn-van-i"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="m9 14 2 2 4-4"/></svg></span><p>Burocrazia ridotta.</p></div>
+    <div class="fn-van"><span class="fn-van-i"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m19 5-14 14"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></span><p>Abbattimento dei prezzi <strong>fino al 40%</strong>.</p></div>
+    <div class="fn-van"><span class="fn-van-i"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span><p>Possibilità di frazionare gli interventi in base alla necessità del cliente: senza impalcature si dà priorità agli interventi più urgenti, rateizzando i costi.</p></div>
+    <div class="fn-van"><span class="fn-van-i"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg></span><p>Interventi di manutenzione programmata con la formula <strong>ZERO PENSIERI</strong>.</p></div>
+    <div class="fn-van"><span class="fn-van-i"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span><p>Eliminazione del rischio intrusione agevolato dall'installazione dei classici ponteggi.</p></div>
+    <div class="fn-van"><span class="fn-van-i"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><p>Operatori altamente qualificati che possono intervenire in meno di un'ora in ogni punto del palazzo o di grandi strutture, risolvendo tempestivamente il problema.</p></div>
   </div>
 </div>
 

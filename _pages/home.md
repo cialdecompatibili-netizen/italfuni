@@ -27,6 +27,28 @@ seo_description: "Lavori edili su fune senza ponteggi: pulizia vetri e grondaie,
 .rete-box canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1;display:block;pointer-events:none}
 .rete-box > *{position:relative}
 .rete-box h2{margin-top:0}
+/* ===== HERO FOTO (Italfuni): foto in dissolvenza lenta DIETRO il testo della home =====
+   COME FUNZIONA: .hero-bg riempie il box (position:absolute, z-index:0); dentro ci sono 5 <img> sovrapposte e un velo scuro (.hero-vel) che tiene il testo leggibile.
+   Ogni foto resta ~6 s, poi sfuma sulla successiva (crossfade) con un lento zoom (Ken Burns). Ciclo = 5 foto x 6 s = 30 s: se cambi il numero di foto
+   aggiorna durata (N x 6s) e i delay nth-child qui sotto, e le percentuali dei keyframes (visibile da 4% a 20% = 6/30).
+   SOLO CSS, nessuna libreria (lo slider Swiper degli articoli di esempio resta com'e': qui si evita di caricare altro JS per non peggiorare il PageSpeed).
+   Per cambiare le foto: sostituisci i src delle <img class="hero-slide"> nel blocco HTML (ordine = ordine di comparsa). Per togliere tutto: cancella questo blocco CSS e il div .hero-bg. */
+.rete-box{overflow:hidden;border-radius:16px;color:#fff;padding:4.5rem 1.5rem;min-height:clamp(430px,62vh,620px);display:flex;flex-direction:column;justify-content:center;align-items:center;background:#0d1b2a}
+.rete-box > *:not(.hero-bg){position:relative;z-index:1;max-width:760px;text-shadow:0 1px 14px rgba(0,0,0,.6)}
+.rete-box h2{color:#fff}
+.rete-box strong{color:#fff}
+.hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1);will-change:opacity,transform;animation:hero-fade 30s linear infinite backwards}
+.hero-slide:nth-child(1){animation-delay:0s;transform-origin:30% 40%}
+.hero-slide:nth-child(2){animation-delay:6s;transform-origin:70% 35%}
+.hero-slide:nth-child(3){animation-delay:12s;transform-origin:50% 60%}
+.hero-slide:nth-child(4){animation-delay:18s;transform-origin:25% 55%}
+.hero-slide:nth-child(5){animation-delay:24s;transform-origin:65% 50%}
+.hero-vel{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,20,36,.58) 0%,rgba(8,20,36,.76) 100%)}
+@keyframes hero-fade{0%{opacity:0;transform:scale(1)}4%{opacity:1}20%{opacity:1}24%{opacity:0;transform:scale(1.1)}100%{opacity:0;transform:scale(1.1)}}
+@media (prefers-reduced-motion:reduce){.hero-slide{animation-name:hero-fade-soft}@keyframes hero-fade-soft{0%{opacity:0}4%{opacity:1}20%{opacity:1}24%{opacity:0}100%{opacity:0}}}
+@media (max-width:600px){.rete-box{padding:3rem 1rem;border-radius:12px}}
+/* ===== HERO FOTO END ===== */
 /* ===== MARTE START (css) - INTERRUTTORE: home_marte in _config.yml (admin > Impostazioni, CLAUDE.md punto 27). HTML e JS sono dentro una condizione Liquid su site.home_marte: tieni START/END e i relativi if/endif in coppia, altrimenti la home si rompe senza errori. Per rimuovere Marte del tutto: cancella da qui a MARTE END (css), il blocco MARTE nell'HTML, lo script MARTE (js) e assets/img/marte.webp ===== */
 .rete-box .marte-orbita{position:absolute;z-index:-2;pointer-events:none;left:50%;top:50%;width:0;height:0;will-change:transform}
 .rete-box .marte-orbita .marte-y{position:absolute;left:0;top:0;width:0;height:0;will-change:transform}
@@ -72,9 +94,9 @@ html[data-theme="dark"] .prj-home-more a{border-color:rgba(255,255,255,.3)}
 
 <div class="rete-box" id="rete-box" markdown="1">
 <!-- ===== MARTE START (html) - interruttore: home_marte in _config.yml (admin > Impostazioni). Se false non esce ne' l'HTML ne' lo script ===== -->
-{%- if site.home_marte != false %}<div class="marte-orbita" aria-hidden="true"><div class="marte-y"><canvas class="marte" width="208" height="208" aria-hidden="true"></canvas></div></div>{% endif %}
+<!-- Marte tolto da questa home (Italfuni usa le foto in dissolvenza qui sotto). Per rimetterlo: ripristina la riga con if site.home_marte != false e il div .marte-orbita > .marte-y > canvas.marte (vedi MARTE START/END css e js) -->
 <!-- ===== MARTE END (html) ===== -->
-<canvas id="rete-cv" aria-hidden="true"></canvas>
+<div class="hero-bg" aria-hidden="true"><img class="hero-slide" src="{{ '/assets/img/italfuni/pulizia-vetri-su-fune-1200x630.jpg' | relative_url }}" alt="" width="1200" height="630" fetchpriority="high" decoding="async"><img class="hero-slide" src="{{ '/assets/img/italfuni/window-cleaner-4593185_1280-1030x686.jpg' | relative_url }}" alt="" width="1030" height="686" loading="lazy" decoding="async"><img class="hero-slide" src="{{ '/assets/img/italfuni/bogota-4490438_1280-1-1030x685.jpg' | relative_url }}" alt="" width="1030" height="685" loading="lazy" decoding="async"><img class="hero-slide" src="{{ '/assets/img/italfuni/rope-access-window-cleaning.jpg' | relative_url }}" alt="" width="640" height="280" loading="lazy" decoding="async"><img class="hero-slide" src="{{ '/assets/img/italfuni/operai-balconi.jpg' | relative_url }}" alt="" width="852" height="480" loading="lazy" decoding="async"><span class="hero-vel"></span></div>
 
 ## Lavori in quota su fune, senza ponteggi e con costi più bassi.
 

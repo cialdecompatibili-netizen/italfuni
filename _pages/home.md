@@ -136,22 +136,34 @@ Evitare ponteggi, piattaforme aeree e permessi comunali rende l'intervento più 
 html[data-theme="dark"] .fn-card{background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.15)}
 .fn-nota{font-size:.85rem;opacity:.65;text-align:center;margin-top:.6rem}
 @media (max-width:700px){.fn-grid{grid-template-columns:1fr}}
+/* PERCHE' SU FUNE: 9 vantaggi in card bianche con cornice e angoli arrotondati, 3 colonne (2 sotto 900px, 1 sotto 600px).
+   Testo scuro FISSO anche in tema scuro, perche' la card resta bianca. Il numero e' in un cerchio col colore del tema. */
+.fn-sec.fn-wide{max-width:1040px}
+.fn-van-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:1.4rem}
+.fn-van{display:flex;flex-direction:column;gap:12px;padding:20px 20px 22px;background:#fff;color:#1f2933;border:1px solid #dfe3e8;border-radius:18px;box-shadow:0 2px 10px rgba(16,24,40,.06);transition:transform .2s ease,box-shadow .2s ease}
+.fn-van:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(16,24,40,.12)}
+.fn-van-n{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--global-theme-color,#b509ac);color:#fff;font-weight:700;font-size:.85rem;letter-spacing:.02em}
+.fn-van p{margin:0;line-height:1.5;text-align:left;color:#1f2933}
+.fn-van strong{color:#111}
+@media (max-width:900px){.fn-van-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.fn-van-grid{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.fn-van{transition:none}.fn-van:hover{transform:none}}
 </style>
 
-<div class="fn-sec">
+<div class="fn-sec fn-wide">
   <h2>Perché intervenire su fune?</h2>
   <p>Al giorno d'oggi molte persone scelgono questo nuovo approccio di fare edilizia. Scopriamo insieme i motivi:</p>
-  <ul class="fn-list">
-    <li>Risoluzione immediata di piccoli problemi strutturali ed estetici in posti inaccessibili.</li>
-    <li>Non serve l'installazione o l'affitto di ponteggi o installazioni aeree.</li>
-    <li>Non servono permessi*.</li>
-    <li>Burocrazia ridotta.</li>
-    <li>Abbattimento dei prezzi fino al 40%.</li>
-    <li>Possibilità di frazionare gli interventi in base alla necessità del cliente: senza impalcature si dà priorità agli interventi più urgenti, rateizzando i costi.</li>
-    <li>Interventi di manutenzione programmata con la formula ZERO PENSIERI.</li>
-    <li>Eliminazione del rischio intrusione agevolato dall'installazione dei classici ponteggi.</li>
-    <li>Operatori altamente qualificati che possono intervenire in meno di un'ora in ogni punto del palazzo o di grandi strutture, risolvendo tempestivamente il problema.</li>
-  </ul>
+  <div class="fn-van-grid">
+    <div class="fn-van"><span class="fn-van-n">01</span><p>Risoluzione immediata di piccoli problemi strutturali ed estetici in posti inaccessibili.</p></div>
+    <div class="fn-van"><span class="fn-van-n">02</span><p>Non serve l'installazione o l'affitto di ponteggi o installazioni aeree.</p></div>
+    <div class="fn-van"><span class="fn-van-n">03</span><p>Non servono permessi*.</p></div>
+    <div class="fn-van"><span class="fn-van-n">04</span><p>Burocrazia ridotta.</p></div>
+    <div class="fn-van"><span class="fn-van-n">05</span><p>Abbattimento dei prezzi <strong>fino al 40%</strong>.</p></div>
+    <div class="fn-van"><span class="fn-van-n">06</span><p>Possibilità di frazionare gli interventi in base alla necessità del cliente: senza impalcature si dà priorità agli interventi più urgenti, rateizzando i costi.</p></div>
+    <div class="fn-van"><span class="fn-van-n">07</span><p>Interventi di manutenzione programmata con la formula <strong>ZERO PENSIERI</strong>.</p></div>
+    <div class="fn-van"><span class="fn-van-n">08</span><p>Eliminazione del rischio intrusione agevolato dall'installazione dei classici ponteggi.</p></div>
+    <div class="fn-van"><span class="fn-van-n">09</span><p>Operatori altamente qualificati che possono intervenire in meno di un'ora in ogni punto del palazzo o di grandi strutture, risolvendo tempestivamente il problema.</p></div>
+  </div>
 </div>
 
 <div class="fn-sec">

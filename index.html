@@ -55,15 +55,20 @@
    Il numero di foto e' libero: il blocco <style> generato da Liquid sotto (prima del box) calcola da solo durata del ciclo, ritardi e percentuali dei keyframes.
    Se _data/hero.yml non esiste o la lista e' vuota si usano le 5 foto di partenza scritte nel blocco Liquid. Per togliere tutto: cancella questo CSS, il blocco Liquid e il div .hero-bg. */
 .rete-box{overflow:hidden;border-radius:16px;color:#fff;padding:4.5rem 1.5rem;min-height:clamp(430px,62vh,620px);display:flex;flex-direction:column;justify-content:center;align-items:center;background:#0d1b2a}
+/* z-index 1 + position relative: il testo sta SOPRA .hero-bg (z-index 0). Senza, le foto coprirebbero il testo. max-width tiene la riga di testo stretta (il box la centra col flex). */
 .rete-box > *:not(.hero-bg){position:relative;z-index:1;max-width:760px}
 .rete-box h2{color:#fff}
 .rete-box strong{color:#fff}
 .hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+/* opacity 0 di base + animation fill backwards: prima del proprio turno la foto e' invisibile (il ritardo e' inline sull'img). will-change = animazione sulla GPU. width/height 100% + object-fit cover riempiono il box qualunque sia il formato della foto. */
 .hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1);will-change:opacity,transform;animation:hero-fade 30s linear infinite backwards}
 @media (prefers-reduced-motion:reduce){.hero-slide{animation-name:hero-fade-soft}}
 @media (max-width:600px){.rete-box{padding:3rem 1rem;border-radius:12px}}
 /* TESTO EVIDENZIATO al posto del velo scuro: ogni riga di testo ha il suo fondo blu notte semi-opaco (stile evidenziatore), cosi' si legge su qualunque foto
-   e le foto restano luminose. box-decoration-break:clone ripete angoli e margini a ogni riga. Il colore e' un rgba: cambia l'ultimo numero (.82) per piu'/meno copertura. */
+   e le foto restano luminose. box-decoration-break:clone ripete angoli e margini a ogni riga. Il colore e' un rgba: cambia l'ultimo numero (.82) per piu'/meno copertura.
+   PUNTI CRITICI: (a) line-height sta nel MARK e NON sul contenitore: un'interlinea larga sul contenitore (2.05, provata e tolta) faceva crescere tutto il box. (b) il padding verticale del mark e'
+   minuscolo (.08em): su un elemento inline non sposta le righe ma ingrossa la striscia, se lo alzi le strisce si toccano. (c) padding e min-height di .rete-box sono quelli originali: l'altezza della home
+   non deve cambiare. (d) il velo scuro .hero-vel e' stato tolto: non rimetterlo. */
 .rete-box mark.hero-hl{background:rgba(10,22,38,.82);color:#fff;padding:.08em .55em;border-radius:7px;line-height:1.7;box-decoration-break:clone;-webkit-box-decoration-break:clone;text-shadow:none}
 .rete-box h2 mark.hero-hl{padding:.05em .5em;line-height:1.5}
 /* ===== HERO FOTO END ===== */

@@ -20,6 +20,8 @@
     'assets/img/italfuni/bogota-4490438_1280-1-1030x685.jpg', 'assets/img/italfuni/rope-access-window-cleaning.jpg', 'assets/img/italfuni/operai-balconi.jpg'];
   var st = { foto: [], secondi: 6, orig: '', sha: '', nuovo: false };
 
+  /* serialize/parse: il file e' YAML minimo scritto e letto A MANO (niente libreria). parse() cerca 'secondi:' e poi i trattini sotto 'foto:'; serialize() lo riscrive intero con 2 spazi
+     davanti ai trattini. Se qualcuno cambia la forma del file a mano (es. foto su una riga sola) parse non le trova e l'admin riparte dalle 5 foto di partenza. */
   function serialize() {
     return 'secondi: ' + st.secondi + '\nfoto:\n' + st.foto.map(function (p) { return '  - ' + p; }).join('\n') + '\n';
   }
@@ -53,6 +55,7 @@
   }
   function save() {
     if (/[\s:#"']/.test(st.foto.join(''))) return Promise.resolve(A.toast('Nome file non ammesso in elenco', true));
+    /* sha fresco a ogni salvataggio (il pannello committa anche in parallelo); file non ancora esistente = getFile rifiuta -> sha vuoto = creazione */
     return A.getFile(FILE).then(function (f) { return f.sha; }, function () { return ''; }).then(function (sha) {
       return A.putFile(FILE, serialize(), sha, 'admin: foto della home (' + st.foto.length + ')').then(function () {
         st.orig = serialize(); A.toast('Salvato: il sito si aggiorna tra 2-3 minuti'); paint();
@@ -92,6 +95,8 @@
     }, function () { st.foto = DEFAULT.slice(); st.secondi = 6; st.orig = ''; });
   }
 
+  /* AVVOLGE la vista Tema: prima gira quella originale (favicon, admin-tema.js), poi si legge _data/hero.yml e si AGGIUNGE la scheda in fondo a main. Se admin-tema.js non e' caricato
+     prima di questo file, A.views.tema e' undefined e l'admin si rompe: l'ordine dei <script> in index.html conta. Non si ridisegna mai tutta la pagina: la favicon non va toccata. */
   var orig = A.views.tema;
   A.views.tema = function () {
     var r = orig.apply(this, arguments);

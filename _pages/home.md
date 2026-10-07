@@ -34,15 +34,20 @@ seo_description: "Lavori edili su fune senza ponteggi: pulizia vetri e grondaie,
    Il numero di foto e' libero: il blocco <style> generato da Liquid sotto (prima del box) calcola da solo durata del ciclo, ritardi e percentuali dei keyframes.
    Se _data/hero.yml non esiste o la lista e' vuota si usano le 5 foto di partenza scritte nel blocco Liquid. Per togliere tutto: cancella questo CSS, il blocco Liquid e il div .hero-bg. */
 .rete-box{overflow:hidden;border-radius:16px;color:#fff;padding:4.5rem 1.5rem;min-height:clamp(430px,62vh,620px);display:flex;flex-direction:column;justify-content:center;align-items:center;background:#0d1b2a}
+/* z-index 1 + position relative: il testo sta SOPRA .hero-bg (z-index 0). Senza, le foto coprirebbero il testo. max-width tiene la riga di testo stretta (il box la centra col flex). */
 .rete-box > *:not(.hero-bg){position:relative;z-index:1;max-width:760px}
 .rete-box h2{color:#fff}
 .rete-box strong{color:#fff}
 .hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+/* opacity 0 di base + animation fill backwards: prima del proprio turno la foto e' invisibile (il ritardo e' inline sull'img). will-change = animazione sulla GPU. width/height 100% + object-fit cover riempiono il box qualunque sia il formato della foto. */
 .hero-slide{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1);will-change:opacity,transform;animation:hero-fade 30s linear infinite backwards}
 @media (prefers-reduced-motion:reduce){.hero-slide{animation-name:hero-fade-soft}}
 @media (max-width:600px){.rete-box{padding:3rem 1rem;border-radius:12px}}
 /* TESTO EVIDENZIATO al posto del velo scuro: ogni riga di testo ha il suo fondo blu notte semi-opaco (stile evidenziatore), cosi' si legge su qualunque foto
-   e le foto restano luminose. box-decoration-break:clone ripete angoli e margini a ogni riga. Il colore e' un rgba: cambia l'ultimo numero (.82) per piu'/meno copertura. */
+   e le foto restano luminose. box-decoration-break:clone ripete angoli e margini a ogni riga. Il colore e' un rgba: cambia l'ultimo numero (.82) per piu'/meno copertura.
+   PUNTI CRITICI: (a) line-height sta nel MARK e NON sul contenitore: un'interlinea larga sul contenitore (2.05, provata e tolta) faceva crescere tutto il box. (b) il padding verticale del mark e'
+   minuscolo (.08em): su un elemento inline non sposta le righe ma ingrossa la striscia, se lo alzi le strisce si toccano. (c) padding e min-height di .rete-box sono quelli originali: l'altezza della home
+   non deve cambiare. (d) il velo scuro .hero-vel e' stato tolto: non rimetterlo. */
 .rete-box mark.hero-hl{background:rgba(10,22,38,.82);color:#fff;padding:.08em .55em;border-radius:7px;line-height:1.7;box-decoration-break:clone;-webkit-box-decoration-break:clone;text-shadow:none}
 .rete-box h2 mark.hero-hl{padding:.05em .5em;line-height:1.5}
 /* ===== HERO FOTO END ===== */
@@ -89,7 +94,20 @@ html[data-theme="dark"] .prj-home-more a{border-color:rgba(255,255,255,.3)}
 @media (max-width:700px){.prj-home-grid{grid-template-columns:1fr}}
 </style>
 
-{%- comment -%} HERO FOTO: elenco da _data/hero.yml (admin > Tema). Ripiego = 5 foto di partenza. {%- endcomment -%}
+{%- comment -%}
+  HERO FOTO (Italfuni) - BLOCCO LIQUID. PUNTI CRITICI
+  1) FONTE: _data/hero.yml (admin > Sito > Tema > Foto della home). Chiavi: secondi e foto (lista di percorsi COMPLETI, es. assets/img/nome.jpg).
+     Se il file manca o la lista e' vuota si usa il ripiego: le 5 foto di partenza scritte qui sotto. Il controllo "unless hf.size > 0" regge anche quando hf non esiste (nil).
+  2) SECONDI: forzato fra 3 e 20. "plus: 0" lo rende numero anche se nel file e' testo; at_least/at_most fanno da limite. Un valore sballato nel file non rompe la home.
+  3) DURATA CICLO hd = numero foto x secondi. Le percentuali dei keyframes (hp1 = fine dissolvenza in entrata, hp2 = fine permanenza, hp3 = fine dissolvenza in uscita) si
+     calcolano QUI perche' il CSS non puo' ricavarle dal numero di foto. Devono essere DECIMALI: si moltiplica per 100.0 PRIMA di divided_by, altrimenti Liquid divide fra
+     interi e arrotonda (il 4% diventerebbe 0 e la dissolvenza sparirebbe).
+  4) RITARDI: ogni foto parte con animation-delay = posizione x secondi, scritto inline sull'img. Niente regole nth-child: cosi' il numero di foto e' libero (il tetto di 10 lo
+     mette l'admin, non il CSS).
+  5) UNA SOLA FOTO: animation none e resta ferma (con il ciclo normale sparirebbe e riapparirebbe).
+  6) hog = punti di partenza dello zoom (transform-origin): si ripetono ogni 5 foto, servono solo a variare il movimento.
+  7) NON scrivere graffe con percentuale dentro un commento Liquid: il commento si chiuderebbe a meta' e la home si rompe senza errori.
+{%- endcomment -%}
 {%- assign hf = site.data.hero.foto -%}
 {%- unless hf.size > 0 -%}{%- assign hf = "assets/img/italfuni/pulizia-vetri-su-fune-1200x630.jpg|assets/img/italfuni/window-cleaner-4593185_1280-1030x686.jpg|assets/img/italfuni/bogota-4490438_1280-1-1030x685.jpg|assets/img/italfuni/rope-access-window-cleaning.jpg|assets/img/italfuni/operai-balconi.jpg" | split: "|" -%}{%- endunless -%}
 {%- assign hs = site.data.hero.secondi | default: 6 | plus: 0 | at_least: 3 | at_most: 20 -%}
@@ -112,7 +130,21 @@ html[data-theme="dark"] .prj-home-more a{border-color:rgba(255,255,255,.3)}
 <!-- ===== MARTE START (html) - interruttore: home_marte in _config.yml (admin > Impostazioni). Se false non esce ne' l'HTML ne' lo script ===== -->
 <!-- Marte tolto da questa home (Italfuni usa le foto in dissolvenza qui sotto). Per rimetterlo: ripristina la riga con if site.home_marte != false e il div .marte-orbita > .marte-y > canvas.marte (vedi MARTE START/END css e js) -->
 <!-- ===== MARTE END (html) ===== -->
+{% comment %}
+  PUNTO CRITICO: il ciclo delle foto sta su UNA SOLA RIGA. Il box e' markdown="1": una riga vuota dentro l'HTML fa chiudere il blocco a kramdown e le foto uscirebbero come testo.
+  Le img sono decorative (alt vuoto + aria-hidden sul contenitore). La prima ha fetchpriority high (e' quella che si vede subito), le altre lazy. Niente width/height: l'img e'
+  assoluta e riempie il box con object-fit cover, quindi non genera spostamenti di layout. Il velo scuro NON c'e' piu' (tolto di proposito: faceva sembrare le foto di notte).
+{% endcomment %}
 <div class="hero-bg" aria-hidden="true">{% for ph in hf %}{% assign hk = forloop.index0 | modulo: 5 %}<img class="hero-slide" src="{{ ph | prepend: '/' | replace: '//', '/' | relative_url }}" alt="" {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %} decoding="async" style="animation-delay:{{ forloop.index0 | times: hs }}s;transform-origin:{{ hog[hk] }}">{% endfor %}</div>
+
+{% comment %}
+  TESTO EVIDENZIATO - PUNTI CRITICI
+  1) Titolo e paragrafi sono avvolti in mark class hero-hl (fondo blu notte riga per riga, stile evidenziatore). Se modifichi o aggiungi un paragrafo avvolgilo anche tu:
+     senza mark il testo resta bianco SENZA fondo e sulle foto chiare non si legge.
+  2) Il titolo e' "## <mark>...</mark>": il mark sta DENTRO l'h2 (resta un vero titolo, conta per la SEO). Non invertire.
+  3) Il grassetto dentro il mark e' scritto col tag strong, NON con gli asterischi: dentro HTML inline kramdown non garantisce di interpretarli e si vedrebbero i ** a schermo.
+  4) Una riga vuota fra un paragrafo e l'altro, come ora.
+{% endcomment %}
 
 ## <mark class="hero-hl">Lavori in quota su fune, senza ponteggi e con costi più bassi.</mark>
 
@@ -160,6 +192,13 @@ html[data-theme="dark"] .fn-card{background:rgba(255,255,255,.05);border-color:r
 <div class="fn-sec fn-wide">
   <h2>Perché intervenire su fune?</h2>
   <p>Al giorno d'oggi molte persone scelgono questo nuovo approccio di fare edilizia. Scopriamo insieme i motivi:</p>
+  {% comment %}
+    VANTAGGI SU FUNE - PUNTI CRITICI
+    1) 9 card = i 9 punti del sito originale, testo identico. 2) Nel DOM l'icona (span fn-van-i) viene PRIMA del testo: e' il CSS a metterla a DESTRA con order:2. Per portarla a sinistra
+       togli order:2 da .fn-van-i. 3) Le icone sono svg inline con stroke currentColor e senza fill: il colore lo da' il CSS (.fn-van-i). Sono decorative (aria-hidden). 4) Altezza uguale
+       per riga = grid con align stretch + min-height: NON mettere height fissa, i testi lunghi (punti 6 e 9) sfonderebbero la card. 5) Fondo bianco e testo scuro sono FISSI e non seguono il
+       tema scuro: voluto, e' una card bianca. 6) Per aggiungere un punto copia una card intera: se il totale non e' multiplo di 3 l'ultima riga resta corta.
+  {% endcomment %}
   <div class="fn-van-grid">
     <div class="fn-van"><span class="fn-van-i"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></span><p>Risoluzione immediata di piccoli problemi strutturali ed estetici in posti inaccessibili.</p></div>
     <div class="fn-van"><span class="fn-van-i"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="m5.6 5.6 12.8 12.8"/></svg></span><p>Non serve l'installazione o l'affitto di ponteggi o installazioni aeree.</p></div>

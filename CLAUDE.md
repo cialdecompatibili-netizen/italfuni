@@ -173,3 +173,10 @@ Other gates:
       ---
       ```
     - **Errori tipici:** titolo del figlio diverso dalla pagina (voce mai evidenziata); permalink con `/villatrecolli/` davanti (link doppio); `dropdown: true` senza `children` (tendina vuota); `nav: true` su due pagine con lo stesso `nav_order` (ordine casuale); divider in coda (riga finale inutile).
+
+38. **HOME ITALFUNI: HERO FOTO, TESTO EVIDENZIATO, CARD VANTAGGI (07/10/2026).** Tutto in `_pages/home.md` (commentato nei punti critici) + `admin/admin-hero.js`.
+    - **Hero foto:** 5+ foto in dissolvenza lenta con zoom DIETRO il testo, solo CSS. Elenco e secondi in `_data/hero.yml` (chiavi `secondi`, `foto`), gestiti da admin > Sito > Tema > "Foto della home" (selettore immagini A.imgPick). Senza file o con lista vuota: 5 foto di partenza scritte nel blocco Liquid. Marte e la rete di puntini sono stati tolti da questa home (commento in home.md su come rimetterli).
+    - **Trabocchetti hero:** (1) le percentuali dei keyframes si calcolano in Liquid con `times: 100.0` PRIMA di `divided_by` (decimali), altrimenti arrotonda a 0. (2) il ciclo delle foto sta su UNA riga: il box e' `markdown="1"` e una riga vuota rompe il blocco HTML. (3) niente graffe con percentuale nei commenti Liquid. (4) nessun `nth-child`: i ritardi sono inline, il numero di foto e' libero (max 10 dall'admin).
+    - **Testo evidenziato (al posto del velo scuro):** titolo e paragrafi sono in `<mark class="hero-hl">` (fondo blu notte rgba, riga per riga). Il velo scuro faceva sembrare le foto di notte: NON rimetterlo. Il grassetto dentro il mark e' `<strong>`, non gli asterischi. L'interlinea larga sul contenitore (2.05) faceva crescere il box: `line-height` sta solo nel mark.
+    - **Card "Perche' intervenire su fune?":** 9 card bianche in 3 colonne (2 sotto 900px, 1 sotto 600px), icona SVG inline a DESTRA (order:2), altezza uguale per riga con grid stretch + min-height, nessuna linea colorata all'hover. Fondo e testo fissi (non seguono il tema scuro).
+    - **Admin:** `admin-hero.js` AVVOLGE `A.views.tema` e va caricato DOPO `admin-tema.js` in `admin/index.html`. Salva `_data/hero.yml` (un .yml: il deploy parte da solo).
